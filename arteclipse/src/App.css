@@ -267,7 +267,7 @@ textarea::placeholder {
 
 /* BUTTONS - Purple theme */
 .btn {
-  background: var(--kavia-purple);
+  background: var(--kavia-blue);
   color: white;
   border: none;
   border-radius: 4px;
@@ -276,10 +276,10 @@ textarea::placeholder {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
-  box-shadow: 0 2.5px 19px 0 #a259ff44;
+  box-shadow: 0 2.5px 19px 0 #2ec4fd44;
 }
 .btn:hover {
-  background: #ad75ff;
+  background: #53d8fd;
 }
 .btn-large {
   padding: 14px 30px;
