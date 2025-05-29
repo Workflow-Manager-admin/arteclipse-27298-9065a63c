@@ -1,3 +1,4 @@
+// Minimalist Address Entry for Gallery, harmonized with Home/Lessons
 import React from "react";
 import FloatingActionButton from "../components/FloatingActionButton";
 import "../components/FloatingActionButton.css";
