@@ -178,10 +178,8 @@ function UserProfile() {
   return (
     <div style={{ width: "100%", paddingTop: 35 }}>
       <div className="subtitle">Profile</div>
-      <h1 className="title">
-        <span className="gradient-headline" style={{ fontWeight: 600, fontSize: "2.40rem", marginBottom: 2 }}>
-          Welcome back, <span style={{ fontWeight: 300, letterSpacing: 0.02 }}>Alex</span>
-        </span>
+      <h1 className="title gradient-headline" style={{ fontWeight: 600, fontSize: "2.40rem", marginBottom: 2 }}>
+        Welcome back, <span style={{ fontWeight: 300, letterSpacing: 0.02 }}>Alex</span>
       </h1>
       <div className="description" style={{ fontWeight: 200, fontSize: "1.11rem", marginBottom: 10 }}>
         Your account, progress, and settings, organized and distraction-free.
