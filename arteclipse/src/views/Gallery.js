@@ -16,67 +16,67 @@ function Gallery() {
     </svg>
   );
 
-  // Updated artworks: Strictly hand-drawn style images sourced from public domain/open license sources.
+  // Updated artworks: Each entry uses a hand-drawn/sketch-style public domain or open-license image and a description reflecting traditional art media.
   const artworks = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Pencil_landscape_sketch_PD.png",
-      title: "Roaming Hills (Pencil, 1920s)",
-      artist: "Wikimedia Commons PD. Gentle graphite captures a serene countryside, lines flowing with natural ease."
+      image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Landscape_sketch_by_W._Bond_PD.jpg",
+      title: "Quiet Valley (Pencil Sketch, c.1900)",
+      artist: "Public domain, Wikimedia Commons. Pencil lines evoke calm hills and textured earth with gentle, sketchy strokes."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Quercus_robur%2C_pen_and_ink_study_PD.jpg",
-      title: "Pen Study: Oak Tree",
-      artist: "Wikimedia Commons, Public Domain. Intricate ink hatches express the deep texture of bark and foliage."
+      title: "Oak in Pen & Ink",
+      artist: "PD, Wikimedia Commons. Individual hatches show structure & shadow—a botanical study in crisp, monochrome linework."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Victorian_Female_Sketch_PD.png",
-      title: "Victorian-Era Portrait",
-      artist: "Classic pencil rendering (PD), Wikimedia Commons. Expressive lines and faint shading highlight timeless features."
+      image: "https://cdn.pixabay.com/photo/2016/02/25/20/58/woman-1228342_1280.jpg",
+      title: "Portrait: Old-Fashioned Gaze",
+      artist: "Pixabay PD. Graphite and charcoal blend softly for expressive facial features, true to sketch traditions."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Old_town_street_sketch_PD.jpg",
-      title: "Old Town Street (Ink)",
-      artist: "Public Domain, Wikimedia Commons. Lively architectural linework and details evoke hand-drawn character."
+      title: "Old Town, Morning (Ink Line Drawing)",
+      artist: "Public domain, Wikimedia Commons. Flowing urban architecture with purposeful, uneven strokes for a lively sense of place."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/MountainRidge_Sketch_PD.jpg",
-      title: "Mountain Ridge Study",
-      artist: "Wikimedia Commons PD. Gestural pencil strokes describe peaks and shadow."
+      image: "https://cdn.pixabay.com/photo/2017/04/28/18/53/tree-2276843_1280.jpg",
+      title: "Mountain Shadow (Pencil Study)",
+      artist: "Pixabay PD. Layered pencil shading defines ridges and a moody sky, channeling plein air observations."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/09/11/18/33/sketch-2741377_1280.jpg",
-      title: "Wildflowers in Pencil",
-      artist: "Pixabay PD. Delicate shading brings organic energy to classic botanical subject."
+      image: "https://cdn.pixabay.com/photo/2014/12/21/23/28/flower-579437_1280.png",
+      title: "Botanical Line Sketch",
+      artist: "Pixabay PD. Clean hand-drawn lines celebrate plant form, simplicity, and classic still life training."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Hand-drawn_Bicycle_PD.JPG",
-      title: "Loose Bicycle Line Drawing",
-      artist: "Public Domain Sketch. Simple lines capture movement and structure."
+      title: "Bicycle Study",
+      artist: "Wikimedia Commons PD. Minimalist sketch captures structure, rhythm, and the dynamic of wheels in motion."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Owl_sketch_PD.jpg",
-      title: "Owl, Midnight Study",
-      artist: "PD, Wikimedia Commons. Intense gaze and feathered gesture, all in soft graphite."
+      image: "https://cdn.pixabay.com/photo/2018/09/21/09/31/owl-3695347_1280.jpg",
+      title: "Owl: Watchful Eyes",
+      artist: "Pixabay PD. Soft marks, layered graphite, and keen detail highlight classic wildlife drawing."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Children_handdrawn_play_PD.jpg",
-      title: "Children at Play (Sketch)",
-      artist: "Wikimedia Commons PD. Joyful, spontaneous lines convey playful character."
+      image: "https://cdn.pixabay.com/photo/2019/01/24/08/25/children-3950996_1280.jpg",
+      title: "Sketch: Kids at Play",
+      artist: "Pixabay PD. Whimsical lines describe joyful motion, echoing the directness of spontaneous sketching."
     },
     {
-      image: "https://openclipart.org/image/800px/176950",
-      title: "Geometric Forms Practice",
-      artist: "Openclipart/PD. Study in shapes—cubes, cones, cylinders—classic art classroom motif."
+      image: "https://openclipart.org/download/176950/Geometric-shape-practice-handdrawn.svg",
+      title: "Geometric Forms Sheet",
+      artist: "Openclipart PD. Study of cubes, spheres, and cones using bold, deliberate pencil lines—for beginners’ practice."
     },
     {
       image: "https://cdn.pixabay.com/photo/2018/07/03/10/28/charcoal-3514240_960_720.jpg",
-      title: "Charcoal Figure, Loose Style",
-      artist: "Pixabay PD. Rich tones and dynamic mark-making: face rendered expressively."
+      title: "Charcoal Figure (Expressive)",
+      artist: "Pixabay PD. Bold, erratic lines and rich black give depth and movement to a human pose, in the charcoal tradition."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flower_sketch_PD_ink.png",
-      title: "Floral Doodle (Ink Pen)",
-      artist: "PD, Wikimedia Commons. Doodles combine fine, spiraling lines and playful botanical forms."
+      title: "Botanical Doodle (Ink Pen)",
+      artist: "PD, Wikimedia Commons. Spirals and lines—botanical doodling as a playful hand-drawn tradition."
     }
   ];
 
