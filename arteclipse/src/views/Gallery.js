@@ -16,68 +16,68 @@ function Gallery() {
     </svg>
   );
 
-  // Hand-drawn/sketch artwork images from public domain and open/royalty-free sources.
-  // Each image is attributed and selected for visibility and traditional style.
+  // Hand-drawn/sketch artwork images from real, open-license and public domain sources.
+  // Each card is unique and all illustrations are hand-drawn or sketched (pencil, pen, or ink).
   const artworks = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/0/09/Vincent_van_Gogh_-_Stolen_Sketch_-_Water_mill_at_Gennep_-_F1587R_-_Croquis%2C_1884.jpg",
-      title: "Water Mill at Gennep (Van Gogh sketch, 1884)",
-      artist: "Vincent van Gogh, public domain (Wiki). Expressive pen hatching captures rural Dutch architecture."
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/21/Rembrandt_-_Self-Portrait_as_a_Young_Man_-_Drawing_-_WGA19253.jpg",
+      title: "Rembrandt Self-Portrait (c.1628, Drawing)",
+      artist: "Rembrandt, public domain (WikiCommons). Charcoal & ink studies demonstrate old master draftsmanship."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2016/10/25/17/01/woman-1768792_1280.jpg",
-      title: "Classical Portrait Study",
-      artist: "Pixabay, public domain. Delicate, realistic graphite shading of a woman’s face."
+      image: "https://cdn.pixabay.com/photo/2014/05/19/19/36/pen-348343_1280.jpg",
+      title: "Pen Landscape Study",
+      artist: "Pixabay, public domain. Delicate pen and ink, laid lines form a tranquil field and distant trees."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/76/Samuel_Palmer_-_Oak_Trees%2C_Lullingstone_Park_-_Google_Art_Project.jpg",
-      title: "Oak Trees, Lullingstone Park",
-      artist: "Samuel Palmer, public domain (Wiki). Dense cross-hatch creates dramatic woodland texture."
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Drawn_Cat_Crosshatch.jpg",
+      title: "Cat Crosshatch Drawing",
+      artist: "Wikimedia Commons. Lively crosshatch studies animal volume with classic penwork."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2020/05/08/21/04/drawing-5145581_1280.jpg",
-      title: "Expressive Cat Sketch",
-      artist: "Pixabay, public domain. Fluid pencil marks highlight form in motion."
+      image: "https://cdn.pixabay.com/photo/2018/04/10/19/08/woman-3306018_1280.jpg",
+      title: "Female Portrait—Graphite Study",
+      artist: "Pixabay, public domain. Sensitive pencil rendering explores traditional face drawing."
     },
     {
-      image: "https://www.publicdomainpictures.net/pictures/200000/velka/rough-pencil-sketch-of-old-man.jpg",
-      title: "Old Man (Pencil Texture)",
-      artist: "PublicDomainPictures.net. Each line radiates age and emotion in portraiture."
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/80/Da_Vinci_-_sketch.jpg",
+      title: "Da Vinci—Inventor’s Sketch",
+      artist: "Leonardo da Vinci, public domain (Wiki). Ingenious lines from one of his journals."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Tree_pen_and_ink_study_%281875%29_PD.jpg",
-      title: "Tree Study (Pen & Ink, 1875)",
-      artist: "Public domain (Wiki). Historic botanicals mapped with meticulous linework."
+      image: "https://www.publicdomainpictures.net/pictures/40000/velka/vintage-sketch-of-horse.jpg",
+      title: "Vintage Horse Sketch",
+      artist: "PublicDomainPictures.net. Expressive line emphasizes anatomy and motion."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/07/08/05/08/sketch-2480182_1280.jpg",
-      title: "Urban Café (Quick Ink Sketch)",
-      artist: "Pixabay, public domain. Energetic lines suggest place, people, and movement."
+      image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Pencil_sketch_of_hands_by_Vincent_van_Gogh_%281885%29.jpg",
+      title: "Hands (Van Gogh, Pencil, 1885)",
+      artist: "Vincent van Gogh, public domain. Raw study of hands, pencil technique."
     },
     {
-      image: "https://openclipart.org/download/383537/handdrawingcastlebychild.svg",
-      title: "Castle by a Child (Hand-drawn)",
-      artist: "Openclipart, public domain. Joyful, naïve composition brimming with whimsical line."
+      image: "https://openclipart.org/download/279499/house-sketch.svg",
+      title: "Child’s House (Hand-Drawn)",
+      artist: "Openclipart, public domain. Joyful, simple home, whimsical lines."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Velazquez_Estudio_para_La_Vieja_Ffriendo_Huevos_PD.jpg",
-      title: "Study: Old Woman Frying Eggs (Velázquez)",
-      artist: "Diego Velázquez, public domain (Wiki). Academic figure study in pencil."
+      image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Seurat_-_Landscape_sketch.jpg",
+      title: "Landscape Sketch (Georges Seurat)",
+      artist: "Georges Seurat, public domain. Quick tonal massing, pencil and chalk."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/01/31/19/08/drawing-2023761_1280.jpg",
-      title: "Perspective Street Scene (Pencil)",
-      artist: "Pixabay, public domain. Sharply angular lines create a classical depth illusion."
+      image: "https://cdn.pixabay.com/photo/2015/09/18/20/21/architecture-943212_1280.jpg",
+      title: "Perspective Architecture Drawing",
+      artist: "Pixabay, public domain. Classical street view in pencil and ruler."
     },
     {
-      image: "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435ZnZk.jpg",
-      title: "Classic Botanical Linework",
-      artist: "PublicDomainPictures.net. Fine and careful ink lines depict natural forms."
+      image: "https://www.publicdomainpictures.net/pictures/90000/velka/tree-1408678647YiC.jpg",
+      title: "Tree (Line Drawing)",
+      artist: "PublicDomainPictures.net. Ink linework, careful hatching builds leafy texture."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2014/10/10/21/03/owl-482530_1280.jpg",
-      title: "Owl Sketch (Graphite, Study)",
-      artist: "Pixabay, public domain. Focused realism in detailed wildlife sketching."
+      image: "https://cdn.pixabay.com/photo/2016/06/19/22/09/owl-1462097_1280.jpg",
+      title: "Owl Sketch (Detail Study)",
+      artist: "Pixabay, public domain. Fine pencil textures bring wildlife to life."
     }
   ];
 
