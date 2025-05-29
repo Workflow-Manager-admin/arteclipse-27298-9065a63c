@@ -72,7 +72,9 @@ function Home() {
 
   return (
     <div className="hero" style={{ gap: "22px" }}>
-      <h1 className="title"><span className="gradient-headline">Welcome to ArtEclipse</span></h1>
+      <h1 className="title">
+        <span className="gradient-headline">Welcome to ArtEclipse</span>
+      </h1>
       <div
         className="description"
         style={{
