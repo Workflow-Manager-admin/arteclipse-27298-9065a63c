@@ -49,22 +49,20 @@ body {
 
 /* Gradient headline (blue-pink-purple ombre for prominent phrases, accessible and crisp for all browsers) */
 .gradient-headline {
-  /* Use a visually balanced ombre across blue, pink, purple—fallbacks for legacy support */
-  background: linear-gradient(90deg, #2ec4fd 0%, #ff5fa2 52%, #a259ff 100%);
+  /* Blue → Pink → Purple visually balanced gradient */
+  background: linear-gradient(to right, #2ec4fd 0%, #8f5eff 48%, #ff5fa2 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  /* For Firefox (future support) */
+  /* For Firefox, future: */
   text-fill-color: transparent;
   display: inline-block;
   font-weight: 700;
   letter-spacing: -0.01em;
-  /* Subtle shadow for white bg or high contrast mode (where supported) */
-  text-shadow: 0 2px 18px #a259ff15, 0 1px 9px #ff5fa215;
+  text-shadow: 0 2px 18px #8f5eff15, 0 1px 9px #ff5fa215;
   /* Prevent line breaks splitting gradient: */
-  white-space: pre-line; 
-  /* Responsive font-weight: slightly bolder for legibility */
+  white-space: pre-line;
 }
 
 .app {
