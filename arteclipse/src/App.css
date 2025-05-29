@@ -80,7 +80,7 @@ body {
 .logo {
   font-size: 1.46rem;
   font-weight: 300;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: var(--font-main);
   display: flex;
   align-items: center;
   gap: 8px;
