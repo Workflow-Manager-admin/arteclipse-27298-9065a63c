@@ -105,15 +105,8 @@ body {
 
 /* .logo-symbol and .logo-text get the rainbow gradient -- only these elements! */
 .logo-symbol {
-  background: linear-gradient(90deg,
-      #ff4545 0%,
-      #ffbe2f 27%,
-      #fff700 44%,
-      #39e669 63%,
-      #33c5ff 76%,
-      #b86fff 88%,
-      #ff3ecf 100%
-  );
+  /* Pink–purple–blue ombre gradient fill (no more rainbow) */
+  background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -121,17 +114,9 @@ body {
   font-size: 1.42em;
   font-weight: 300;
 }
-/* Rainbow gradient for logo text */
 .logo-text {
-  background: linear-gradient(90deg,
-      #ff4545 0%,      /* Red */
-      #ffbe2f 20%,     /* Orange/Yellow */
-      #fff700 36%,     /* Yellow */
-      #39e669 53%,     /* Green */
-      #33c5ff 68%,     /* Blue */
-      #b86fff 84%,     /* Violet */
-      #ff3ecf 100%     /* Magenta/Pink */
-  );
+  /* Pink–purple–blue ombre gradient fill for "ArtEclipse" */
+  background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
