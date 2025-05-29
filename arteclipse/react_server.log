@@ -38,3 +38,6 @@ src/views/Gallery.js
   Line 12:19:  'setAddress' is assigned a value but never used  no-unused-vars
 
 webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
