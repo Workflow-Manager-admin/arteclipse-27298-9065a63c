@@ -25,6 +25,8 @@ function App() {
     <Router>
       <div className="app">
         <nav className="navbar accent-nav">
+          {/* NOTE: Inline styling here adjusts only layout, NOT color. 
+              All color is forced in CSS for navbar and children via !important. */}
           <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div className="logo">
               <span
@@ -36,6 +38,7 @@ function App() {
               ArtEclipse
             </div>
             <nav className="nav-links" aria-label="Main Navigation">
+              {/* nav-link classNames matched exactly to CSS -- color fully controlled via App.css */}
               <a href="/" className="nav-link">Home</a>
               <a href="/lessons" className="nav-link">Lessons</a>
               <a href="/gallery" className="nav-link">Gallery</a>
