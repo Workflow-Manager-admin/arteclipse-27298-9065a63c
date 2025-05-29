@@ -1,22 +1,52 @@
 import React from "react";
 
-// PUBLIC_INTERFACE
 /**
  * Home view for ArtEclipse
  */
 function Home() {
-  // Placeholder minimalist teacher image (SVG - user silhouette with circle border)
-  const TeacherImage = ({ alt }) => (
+  // Teacher photos (copyright/CC0 or public domain links encouraged)
+  const teacherPhotos = [
+    // Elena Rivera
+    "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&w=160&q=80",
+    // Kenji Mori
+    "https://images.unsplash.com/photo-1519340333755-c190485c1697?auto=format&fit=facearea&w=160&q=80",
+    // Nia Adewale
+    "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=160&q=80"
+  ];
+
+  // Teachers' data
+  const teachers = [
+    {
+      name: "Elena Rivera",
+      journey: "Elena started sketching urban landscapes in the early mornings of Barcelona. Through art, she found a meditative escape. Her focus is capturing mood with as little as possible—teaching students how to say more by drawing less.",
+      photo: teacherPhotos[0]
+    },
+    {
+      name: "Kenji Mori",
+      journey: "Kenji left a corporate tech career in Tokyo to explore abstract watercolors. His lessons guide beginners through freeing their imagination, untethering creativity, and building a daily mindful sketching habit.",
+      photo: teacherPhotos[1]
+    },
+    {
+      name: "Nia Adewale",
+      journey: "Nia's journey began with mural painting in Lagos. She now explores digital minimalism and color theory, inspiring others to express powerful stories using just shape, space, and light.",
+      photo: teacherPhotos[2]
+    },
+  ];
+
+  // Circular teacher image component - uses actual photo passed via src
+  const TeacherPhoto = ({ src, alt }) => (
     <div
       style={{
         width: 84,
         height: 84,
+        minWidth: 84,
+        minHeight: 84,
         borderRadius: "50%",
-        background: "rgba(255,255,255,0.01)",
+        background: "rgba(255,255,255,0.018)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        border: "1.3px solid var(--border-color,rgba(255,255,255,0.12))",
+        border: "1.3px solid var(--border-color,rgba(255,255,255,0.14))",
         marginBottom: 16,
         marginTop: 2,
         boxShadow: "none",
@@ -24,30 +54,21 @@ function Home() {
       }}
       aria-label={alt}
     >
-      {/* minimalist SVG for user */}
-      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <circle cx="24" cy="24" r="23" stroke="rgba(255,255,255,0.16)" strokeWidth="2"/>
-        <ellipse cx="24" cy="20.5" rx="7.7" ry="7.2" fill="rgba(255,255,255,0.12)"/>
-        <path d="M12.5 38.5c1.2-7.6 21.2-7.6 23 0" stroke="rgba(255,255,255,0.18)" strokeWidth="2.2" strokeLinecap="round" fill="none"/>
-      </svg>
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          borderRadius: "50%",
+          background: "rgba(255,255,255,0)",
+          boxShadow: "none"
+        }}
+        loading="lazy"
+      />
     </div>
   );
-
-  // Teachers' data
-  const teachers = [
-    {
-      name: "Elena Rivera",
-      journey: "Elena started sketching urban landscapes in the early mornings of Barcelona. Through art, she found a meditative escape. Her focus is capturing mood with as little as possible—teaching students how to say more by drawing less.",
-    },
-    {
-      name: "Kenji Mori",
-      journey: "Kenji left a corporate tech career in Tokyo to explore abstract watercolors. His lessons guide beginners through freeing their imagination, untethering creativity, and building a daily mindful sketching habit.",
-    },
-    {
-      name: "Nia Adewale",
-      journey: "Nia's journey began with mural painting in Lagos. She now explores digital minimalism and color theory, inspiring others to express powerful stories using just shape, space, and light.",
-    },
-  ];
 
   return (
     <div className="hero" style={{ gap: "22px" }}>
@@ -73,26 +94,28 @@ function Home() {
       <div className="description">
         Discover, learn, and showcase art in a distraction-free space.
       </div>
-      {/* Vertical Teacher Sections */}
+      {/* Horizontal Teacher Sections */}
       <section
         style={{
           margin: "38px 0 0 0",
           width: "100%",
-          maxWidth: 690,
+          maxWidth: 760,
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "35px",
+          flexDirection: "row",
+          alignItems: "stretch",
+          justifyContent: "center",
+          gap: "36px",
+          flexWrap: "wrap",
         }}
         aria-label="Meet the Online Teachers"
       >
-        {teachers.map(({ name, journey }, idx) => (
+        {teachers.map(({ name, journey, photo }, idx) => (
           <div
             key={name}
             style={{
-              width: "98%",
-              maxWidth: 440,
-              padding: "26px 24px 22px 24px",
+              width: 240,
+              maxWidth: "92vw",
+              padding: "26px 19px 22px 19px",
               margin: 0,
               borderRadius: "19px",
               background: "rgba(255,255,255,0.011)",
@@ -106,15 +129,16 @@ function Home() {
               minHeight: 182,
               fontFamily: "var(--font-main)",
               fontWeight: 200,
-              transition: "box-shadow 0.17s"
+              transition: "box-shadow 0.17s",
+              flex: "0 1 240px",
             }}
           >
-            <TeacherImage alt={`Portrait of ${name}`} />
+            <TeacherPhoto src={photo} alt={`Photo of ${name}`} />
             <div
               style={{
                 fontFamily: "var(--font-main)",
                 fontWeight: 200,
-                fontSize: "1.21rem",
+                fontSize: "1.18rem",
                 letterSpacing: "0.018em",
                 marginBottom: "3px",
                 color: "var(--text-color, #fff)",
@@ -128,14 +152,15 @@ function Home() {
               style={{
                 fontFamily: "var(--font-main)",
                 fontWeight: 200,
-                fontSize: "1.04rem",
-                color: "var(--text-secondary,rgba(255,255,255,0.72))",
+                fontSize: "1.01rem",
+                color: "var(--text-secondary,rgba(255,255,255,0.69))",
                 marginBottom: 2,
                 marginTop: 0,
                 letterSpacing: "0.012em",
                 textAlign: "center",
                 maxWidth: 350,
-                lineHeight: 1.53
+                lineHeight: 1.44,
+                minHeight: 82,
               }}
             >
               {journey}
