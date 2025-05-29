@@ -95,7 +95,7 @@ body {
 }
 
 .logo-symbol {
-  background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
+  background: linear-gradient(to right, #ff5fa2, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -104,7 +104,7 @@ body {
   font-weight: 300;
 }
 .logo-text {
-  background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
+  background: linear-gradient(to right, #ff5fa2, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
