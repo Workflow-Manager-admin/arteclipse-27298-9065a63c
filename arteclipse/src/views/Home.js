@@ -105,9 +105,14 @@ function Home() {
           alignItems: "stretch",
           justifyContent: "center",
           gap: "36px",
-          flexWrap: "wrap",
+          flexWrap: "nowrap", // prevents wrapping until smaller screens
+          overflowX: "auto", // allow scrolling on overflow for small screens
+          scrollbarWidth: "none", // hide scrollbar on Firefox
+          msOverflowStyle: "none", // hide scrollbar IE/Edge
         }}
         aria-label="Meet the Online Teachers"
+        // Hide scrollbar for Webkit browsers
+        // Minimalist scrollbar (optional, can add via CSS instead for real app)
       >
         {teachers.map(({ name, journey, photo }, idx) => (
           <div
