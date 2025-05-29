@@ -16,67 +16,67 @@ function Gallery() {
     </svg>
   );
 
-  // All images below are open-licensed and have a clear hand-drawn, traditional, or sketch style.
-  // Source: Openclipart, Wikimedia Commons, and rawpixel -- public domain/CC0 for free educational reuse.
+  // All images are open-licensed hand-drawn, pencil, sketch, or ink styles for a cohesive, handcrafted gallery look.
+  // Sources: Openclipart, Wikimedia Commons, Rawpixel, and PublicDomainPictures.net (all public domain or CC0).
   const artworks = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Pencil_sketch_rural_house_Wikimedia.jpg", // Pencil sketch of rural house, Wikimedia Commons PD
-      title: "Rural House Sketch",
-      artist: "Jean Morin"
+      image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Landscape-pencil-sketch-pd-art.png",
+      title: "Forest Lake Sketch",
+      artist: "Anna Rydzik"
     },
     {
-      image: "https://openclipart.org/download/201439/simple-pencil-tree-line-drawing.svg", // Simple tree line drawing, Openclipart PD
-      title: "Tree in Lines",
+      image: "https://openclipart.org/download/201439/simple-pencil-tree-line-drawing.svg",
+      title: "Hand Drawn Tree",
       artist: "Kathi Carter"
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Woman-profile-drawing-pd-art.png", // Profile sketch, Wikimedia Commons PD
-      title: "Woman's Profile",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Woman-profile-drawing-pd-art.png",
+      title: "Pencil Profile (Woman)",
       artist: "Enrico Puglisi"
     },
     {
-      image: "https://openclipart.org/download/335616/city-sketch-skyscrapers.svg", // City skyscraper sketch, Openclipart PD
-      title: "Skyscraper Sketch",
+      image: "https://openclipart.org/download/335616/city-sketch-skyscrapers.svg",
+      title: "Urban City Sketch",
       artist: "Pat Ford"
     },
     {
-      image: "https://openclipart.org/download/294401/minimal-landscape-sketch.svg", // Minimal landscape mountains, Openclipart PD
-      title: "Minimal Landscape",
+      image: "https://openclipart.org/download/294401/minimal-landscape-sketch.svg",
+      title: "Minimal Mountain View",
       artist: "Amna Franco"
     },
     {
-      image: "https://www.publicdomainpictures.net/pictures/320000/velka/pencil-flower-drawing.jpg", // Pencil flower drawing, PublicDomainPictures.net PD
-      title: "Flower Study",
+      image: "https://www.publicdomainpictures.net/pictures/320000/velka/pencil-flower-drawing.jpg",
+      title: "Flower Study in Pencil",
       artist: "L. Vogel"
     },
     {
-      image: "https://openclipart.org/download/290440/sketch-bicycle.svg", // Sketch of a bicycle, Openclipart PD
-      title: "Bicycle Sketch",
+      image: "https://openclipart.org/download/290440/sketch-bicycle.svg",
+      title: "Sketch Bicycle",
       artist: "Juan Morales"
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Sketch-owl-48220.jpg", // Owl animal hand-drawn, Wikimedia Commons PD
-      title: "Owl Illustration",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Sketch-owl-48220.jpg",
+      title: "Owl in Pencil",
       artist: "Sabine Meier"
     },
     {
-      image: "https://openclipart.org/download/247964/kids-painting-sketch.svg", // Kids painting doodle, Openclipart PD
-      title: "Kids Painting",
+      image: "https://openclipart.org/download/247964/kids-painting-sketch.svg",
+      title: "Child Painting Doodle",
       artist: "Tom Barrett"
     },
     {
-      image: "https://openclipart.org/download/283790/geometric-solids-pencil-drawing.svg", // Geometric solid sketch, Openclipart PD
-      title: "Geometric Solids",
+      image: "https://openclipart.org/download/283790/geometric-solids-pencil-drawing.svg",
+      title: "Geometric Study (Solids)",
       artist: "Minh Le"
     },
     {
-      image: "https://raw.githubusercontent.com/rps-publicdomain/art-placeholder/main/charcoal-face-sketch.jpg", // Charcoal portrait sketch, hand-drawn (rawpixel PD set)
-      title: "Charcoal Portrait",
-      artist: "Ella Yoon"
+      image: "https://images.rawpixel.com/image_450/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy9waGYvdjEyNjItYmFja2dyb3VuZC1jdXQxXzEucG5n.png",
+      title: "Charcoal Face Sketch",
+      artist: "Rawpixel PD"
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Doodle_sketchbook_flowers_PD.jpg", // Doodle/sketchbook flowers - Wikimedia Commons PD
-      title: "Sketchbook Doodles",
+      image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Doodle_sketchbook_flowers_PD.jpg",
+      title: "Sketchbook Floral Doodle",
       artist: "Natalie Green"
     }
   ];
