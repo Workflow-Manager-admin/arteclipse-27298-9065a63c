@@ -26,17 +26,9 @@ function App() {
       <div className="app">
         <nav className="navbar accent-nav">
           <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div className="logo" style={{ userSelect: "none", fontFamily: "inherit" }}>
+            <div className="logo">
               <span
                 className="logo-symbol"
-                style={{
-                  background: "linear-gradient(90deg, #E87A41 0%, #4b006e 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontWeight: 700,
-                  fontSize: "1.5rem",
-                  marginRight: "6px"
-                }}
                 aria-label="ArtEclipse logo"
               >
                 ◐
@@ -44,10 +36,10 @@ function App() {
               ArtEclipse
             </div>
             <nav className="nav-links" aria-label="Main Navigation">
-              <a href="/" className="nav-link" style={{ textDecoration: "none", color: "var(--text-color)", fontWeight: 500, marginRight: 24, padding: "2px 0", borderBottom: "2px solid transparent", transition: "border 0.15s"  }}>Home</a>
-              <a href="/lessons" className="nav-link" style={{ textDecoration: "none", color: "var(--text-secondary)", fontWeight: 500, marginRight: 24, padding: "2px 0", borderBottom: "2px solid transparent", transition: "border 0.15s"  }}>Lessons</a>
-              <a href="/gallery" className="nav-link" style={{ textDecoration: "none", color: "var(--text-secondary)", fontWeight: 500, marginRight: 24, padding: "2px 0", borderBottom: "2px solid transparent", transition: "border 0.15s"  }}>Gallery</a>
-              <a href="/profile" className="nav-link" style={{ textDecoration: "none", color: "var(--text-secondary)", fontWeight: 500, padding: "2px 0", borderBottom: "2px solid transparent", transition: "border 0.15s"  }}>Profile</a>
+              <a href="/" className="nav-link">Home</a>
+              <a href="/lessons" className="nav-link">Lessons</a>
+              <a href="/gallery" className="nav-link">Gallery</a>
+              <a href="/profile" className="nav-link">Profile</a>
             </nav>
           </div>
         </nav>

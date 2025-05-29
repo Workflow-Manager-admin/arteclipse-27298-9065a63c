@@ -75,6 +75,7 @@ body {
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.007em;
+  color: #000 !important; /* Force black in navbar */
 }
 
 /* LOGO: logo text is minimalist black, symbol remains orange accent */
