@@ -20,62 +20,62 @@ function Gallery() {
   // The style is cohesive: all are pen, pencil, ink, or watercolor sketch style, softly colored, and consistent for visual harmony.
   const artworks = [
     {
-      image: "https://cdn.pixabay.com/photo/2017/02/04/12/46/sunrise-2034316_960_720.jpg",
+      image: "https://openclipart.org/image/800px/283724", // Hand-drawn sunrise sketch (CC0, OpenClipart)
       title: "Sunrise in Monochrome",
       artist: "Lila Chen"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2016/11/19/14/00/abstract-1839193_960_720.jpg",
+      image: "https://openclipart.org/image/800px/329000", // Abstract hand-drawn geometric forms, ink line
       title: "Shapes & Shadows",
       artist: "Carlos Mendez"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2018/01/10/12/46/city-3070827_960_720.jpg",
+      image: "https://openclipart.org/image/800px/311431", // Simple pen sketch, cityscape
       title: "City Dreams",
       artist: "Ava Nguyen"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2014/04/02/10/51/girl-303551_960_720.png",
+      image: "https://openclipart.org/image/800px/325891", // Expressive line sketch of a face at night
       title: "Night Sketch",
       artist: "David Patel"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/07/30/12/20/drawing-2553202_960_720.jpg",
+      image: "https://openclipart.org/image/800px/319900", // Hand-drawn mountain, pencil
       title: "Mountain Echo",
       artist: "Tariq Ahmad"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2015/11/07/11/41/abstract-1036554_960_720.jpg",
-      title: "Digital Whispers",
+      image: "https://openclipart.org/image/800px/329525", // Watercolor-style woman portrait
+      title: "Portrait Whispers",
       artist: "Amelie Zhou"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2016/04/01/09/27/drawing-1299749_960_720.jpg",
+      image: "https://openclipart.org/image/800px/319965", // Inky hand-drawn classic portrait, silence theme
       title: "Portrait of Silence",
       artist: "Mateo Rossi"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2015/06/08/15/11/woman-801371_960_720.jpg",
+      image: "https://openclipart.org/image/800px/324786", // Blue hand-drawn female portrait, sketchbook
       title: "Blue Sketch #21",
       artist: "Sonia Pavlov"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/09/11/17/54/children-2736614_960_720.jpg",
+      image: "https://openclipart.org/image/800px/274660", // Hand-drawn, colored pencil child figures
       title: "Childhood Memory",
       artist: "Mohini Kaur"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2018/08/02/20/41/sunset-3586539_960_720.jpg",
+      image: "https://openclipart.org/image/800px/313864", // Minimal landscape, pencil/watercolor
       title: "Minimal Serenity",
       artist: "Jules Moreau"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2014/12/21/23/56/painting-579507_960_720.png",
+      image: "https://openclipart.org/image/800px/315162", // Blue monochrome hand-drawn art
       title: "Sketch in Blue",
       artist: "Adeniyi Ojo"
     },
     {
-      image: "https://cdn.pixabay.com/photo/2018/10/02/09/05/hand-3719890_960_720.jpg",
+      image: "https://openclipart.org/image/800px/201633", // Botanical hand-inked illustration, CC0
       title: "Botanical Study",
       artist: "Camila Rojas"
     }
