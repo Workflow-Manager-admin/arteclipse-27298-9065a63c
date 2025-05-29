@@ -521,8 +521,8 @@ a:hover, a:focus {
   justify-content: flex-start;
 }
 .lesson-card:hover {
-  border-color: var(--kavia-purple, #a259ff);
-  box-shadow: 0 6px 32px 0 #a259ff4a, 0 2px 11px 0 #13012916;
+  border-color: var(--kavia-blue, #2ec4fd);
+  box-shadow: 0 6px 32px 0 #2ec4fd4a, 0 2px 11px 0 #13012916;
   cursor: pointer;
 }
 
@@ -579,8 +579,8 @@ a:hover, a:focus {
   margin-right: 0;
 }
 .lesson-card:hover {
-  border-color: var(--kavia-purple, #a259ff);
-  box-shadow: 0 6px 32px 0 #a259ff4a, 0 2px 11px 0 #13012916;
+  border-color: var(--kavia-blue, #2ec4fd);
+  box-shadow: 0 6px 32px 0 #2ec4fd4a, 0 2px 11px 0 #13012916;
   cursor: pointer;
 }
 
