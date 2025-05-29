@@ -33,7 +33,9 @@ function App() {
               >
                 ◐
               </span>
-              ArtEclipse
+              <span className="logo-text">
+                ArtEclipse
+              </span>
             </div>
             <div className="nav-links" aria-label="Main Navigation">
               <a href="/" className="nav-link">Home</a>
