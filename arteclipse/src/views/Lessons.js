@@ -125,17 +125,29 @@ function Lessons() {
   const lessonStrips = chunkArray(lessons, 4);
 
   return (
-    <div className="hero">
-      <div className="subtitle">Interactive Lessons</div>
-      <h1 className="title">Video Drawing Course: Beginner to Advanced</h1>
-      <div className="description" style={{ maxWidth: 530 }}>
+    <div className="hero" style={{ padding: 0, maxWidth: "none", width: "100vw", position: "relative", alignItems: "flex-start" }}>
+      <div className="subtitle" style={{ marginLeft: 10 }}>Interactive Lessons</div>
+      <h1 className="title" style={{ marginLeft: 10 }}>Video Drawing Course: Beginner to Advanced</h1>
+      <div className="description" style={{ maxWidth: 530, marginLeft: 10 }}>
         16 immersive, minimalist video lessons—explore drawing from the simplest mark to advanced illustration mastery. Each card is a complete 10-hour journey.
       </div>
-      {/* Strips each containing 4 horizontally aligned lesson cards */}
-      <section className="lessons-strips-container" aria-label="Drawing Video Lessons">
+      {/* Strips each containing 4 horizontally aligned lesson cards, expand container to full width */}
+      <section
+        className="lessons-strips-container"
+        aria-label="Drawing Video Lessons"
+        style={{
+          width: "100vw",
+          maxWidth: "100vw",
+          marginLeft: 0,
+          marginRight: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+          boxSizing: "border-box"
+        }}
+      >
         {lessonStrips.map((strip, idx) => (
           <div className="lessons-strip-row" key={`strip-${idx}`}>
-            {strip.map((lesson, j) => (
+            {strip.map((lesson) => (
               <div className="lesson-card" key={lesson.title}>
                 <VideoThumbnail />
                 <div className="lesson-card-title">{lesson.title}</div>
