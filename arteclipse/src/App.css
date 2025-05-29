@@ -31,8 +31,8 @@ body {
       #FFFF00 50%,   /* Yellow */
       #00FF00 75%,   /* Green */
       #0000FF 100%   /* Blue - no indigo, violet, or magenta */
-    ),
-    #000; /* fallback for deep contrast beneath */
+    );
+    /* Remove fallback solid black: rainbow should always show */
 
   /* Ensure sufficient contrast for all content */
   min-height: 100vh;
@@ -41,7 +41,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.005em;
   transition: background 0.36s;
-  background-blend-mode: multiply, normal;
+  /* Remove blend mode for vibrant visibility */
 }
 
 /* Gradient headline (blue-pink-purple ombre for prominent phrases, accessible and crisp for all browsers) */
