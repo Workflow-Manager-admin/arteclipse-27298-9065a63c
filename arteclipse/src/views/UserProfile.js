@@ -179,7 +179,7 @@ function UserProfile() {
     <div style={{ width: "100%", paddingTop: 35 }}>
       <div className="subtitle">Profile</div>
       <h1 className="title">
-        <span className="gradient-headline" style={{ fontWeight: 200, fontSize: "2.40rem", marginBottom: 2 }}>
+        <span className="gradient-headline" style={{ fontWeight: 600, fontSize: "2.40rem", marginBottom: 2 }}>
           Welcome back, <span style={{ fontWeight: 300, letterSpacing: 0.02 }}>Alex</span>
         </span>
       </h1>
