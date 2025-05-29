@@ -2,7 +2,7 @@
   /* Color palette: minimalist, deep black with subtle rainbow overlay for ArtEclipse */
   --primary-bg: #000000;
   --ombre-end: #4b006e; /* Retain for accents and legacy backgrounds */
-  --kavia-orange: #E87A41;
+  --kavia-purple: #a259ff;
   --kavia-dark: #161623;
   /* Subtly updated accent for navigation bar/backgrounds, remains visually harmonic with new effect */
   --kavia-accent: linear-gradient(90deg, #000000 0%, #4b006e 100%);
