@@ -111,34 +111,39 @@ body {
   font-weight: 200;
 }
 
+/* NAVIGATION LINKS: always nearly-black, minimalist thin font */
 .nav-link {
   font-size: var(--font-sz-base);
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
-  color: #181920;
+  color: #222; /* nearly-black for best legibility on white */
   border-radius: 0;
-  border-bottom: 2.2px solid transparent;
-  transition: color 0.16s, border-bottom 0.18s;
+  border-bottom: 2px solid transparent;
+  transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
   margin: 0;
   padding: 2px 0 3px 0;
   text-decoration: none;
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.011em;
+  background: none;
 }
 
-.nav-link:first-child,
+/* ACTIVE state: slightly bolder, but keep text #222 */
 .nav-link.active,
 .nav-link[aria-current="page"] {
-  color: #181920;
+  color: #222;
   font-weight: 400;
+  border-bottom: 2px solid #222;
+  background: none;
 }
 
+/* HOVER/FOCUS: subtle kavia orange, minimalist underline; text weight slightly up */
 .nav-link:hover, .nav-link:focus {
   color: var(--kavia-orange);
-  border-bottom: 2.2px solid var(--kavia-orange);
+  border-bottom: 2px solid var(--kavia-orange);
   text-decoration: none;
   background: none;
   font-weight: 400;
