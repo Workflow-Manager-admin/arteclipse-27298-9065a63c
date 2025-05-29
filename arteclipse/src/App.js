@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="app">
         <nav className="navbar">
-          <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div className="container navbar-inner">
             <div className="logo">
               <span
                 className="logo-symbol"
