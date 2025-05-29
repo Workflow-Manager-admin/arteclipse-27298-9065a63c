@@ -86,9 +86,11 @@ body {
   gap: 8px;
   letter-spacing: 0.01em;
   user-select: none;
-  background: linear-gradient(90deg, var(--kavia-orange), var(--ombre-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #222;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  /* minimal, just black text for logo (symbol handled separately) */
 }
 
 .logo-symbol {
