@@ -254,9 +254,15 @@ body {
 }
 
 /* only logo symbol gets accent color */
+/* Rainbow gradient for logo symbol (ArtEclipse icon only) */
 .logo-symbol {
-  color: var(--kavia-orange);
-  background: none;
+  background: linear-gradient(90deg, 
+      #ff4545 0%, #ffbe2f 27%, #fff700 40%, #39e669 56%, #33c5ff 72%, #b86fff 88%, #ff3ecf 100%
+    );
+  color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
   font-size: 1.42em;
   font-weight: 300;
 }
