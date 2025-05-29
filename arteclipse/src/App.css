@@ -23,45 +23,25 @@ body {
   font-family: var(--font-main);
   color: var(--text-color);
 
-  /* Enhanced, more vibrant and visible rainbow gradient effects for background */
-  background:
-    /* Rainbow glow overlay: wider, brighter, more saturated colors */
-    radial-gradient(ellipse 120% 86% at 50% 6%,
-      rgba(255,30,120,0.17) 0%,     /* Rose Pink */
-      rgba(255,116,0,0.11) 13%,     /* Orange */
-      rgba(255,229,0,0.09) 23%,     /* Yellow */
-      rgba(0,237,125,0.10) 39%,     /* Green */
-      rgba(0,180,255,0.13) 61%,     /* Aqua Blue */
-      rgba(93,56,255,0.20) 76%,     /* Violet stronger */
-      rgba(205,0,255,0.13) 88%,     /* Magenta */
-      rgba(0,0,0,0) 100%
+  /* Vibrant classic rainbow gradient, red through blue, high readability */
+  background: linear-gradient(
+      120deg,
+      #FF0000 0%,    /* Red */
+      #FF7F00 25%,   /* Orange */
+      #FFFF00 50%,   /* Yellow */
+      #00FF00 75%,   /* Green */
+      #0000FF 100%   /* Blue - no indigo, violet, or magenta */
     ),
-    /* Main linear rainbow blend at a shallow angle, high saturation, subtle alpha */
-    linear-gradient(107deg, 
-      rgba(255,30,120,0.16) 4%,     /* Pink */
-      rgba(255,116,0,0.13) 16%,     /* Orange */
-      rgba(255,229,0,0.16) 28%,     /* Yellow */
-      rgba(0,237,125,0.16) 47%,     /* Green */
-      rgba(0,180,255,0.18) 65%,     /* Blue */
-      rgba(93,56,255,0.23) 83%,     /* Violet/Purple, higher opacity */
-      rgba(205,0,255,0.14) 97%      /* Magenta */
-    ),
-    /* Subtle base ombre overlay to blend with theme */
-    linear-gradient(115deg,
-      rgba(75,0,110,0.19) 0%,       /* Deep purple */
-      rgba(0,0,0,0) 100%
-    ),
-    #000000;
+    #000; /* fallback for deep contrast beneath */
 
-  /* Overlay tweaks for vibrancy but preserving UI readability: */
+  /* Ensure sufficient contrast for all content */
   min-height: 100vh;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.005em;
   transition: background 0.36s;
-  /* Ensure non-opaque elements don't bleed color: */
-  background-blend-mode: lighten, screen, normal;
+  background-blend-mode: multiply, normal;
 }
 
 /* Gradient headline (blue-pink-purple ombre for prominent phrases, accessible and crisp for all browsers) */
