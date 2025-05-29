@@ -91,169 +91,36 @@ body {
   width: 100%;
 }
 
-.navbar, 
-.navbar .logo,
-.navbar .logo span:not(.logo-symbol),
+/* NAVIGATION LINK COLORS: only these selectors enforce black, not .logo or .logo-symbol */
+.navbar,
 .navbar .nav-links,
 .navbar .nav-links .nav-link,
 .navbar .nav-link,
 .navbar .nav-link:visited,
 .nav-link,
 .navbar .nav-link[aria-current="page"],
-.navbar .nav-links .nav-link:visited
-{
+.navbar .nav-links .nav-link:visited {
   color: #222 !important;
-  /* Use nearly-black for all nav items */
 }
 
-.navbar .logo-symbol,
+/* .logo-symbol and .logo-text get the rainbow gradient -- only these elements! */
 .logo-symbol {
-  color: var(--kavia-orange) !important;
-}
-
-.navbar .logo,
-/* =================== RAINBOW LOGO GRADIENT EFFECT =================== */
-.logo {
-  font-size: 1.46rem;
-  font-weight: 300;
-  font-family: var(--font-main);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: 0.01em;
-  user-select: none;
-  /* Rainbow gradient text fill for the logo text (but not for nav links/others) */
-  background: linear-gradient(90deg, 
-      #ff4545 0%,      /* Red */
-      #ffbe2f 20%,     /* Orange/Yellow */
-      #fff700 36%,     /* Yellow */
-      #39e669 53%,     /* Green */
-      #33c5ff 68%,     /* Blue */
-      #b86fff 84%,     /* Violet */
-      #ff3ecf 100%     /* Magenta/Pink */
-    );
+  background: linear-gradient(90deg,
+      #ff4545 0%,
+      #ffbe2f 27%,
+      #fff700 44%,
+      #39e669 63%,
+      #33c5ff 76%,
+      #b86fff 88%,
+      #ff3ecf 100%
+  );
   color: transparent !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
-  /* Defensive, so no other colors override */
-  position: relative;
-  z-index: 1;
-}
-
-.navbar .logo span:not(.logo-symbol), .logo span:not(.logo-symbol) {
-  color: #222 !important;
-}
-
-.logo-symbol {
-  background: none !important;
   font-size: 1.42em;
   font-weight: 300;
 }
-
-.navbar .nav-links,
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-left: 24px;
-  font-family: var(--font-main);
-  font-weight: 200;
-  color: #222 !important;
-}
-
-.navbar .nav-links .nav-link,
-.navbar .nav-link,
-.navbar .nav-link:visited,
-.navbar .nav-link[aria-current="page"],
-.nav-link,
-.nav-link:visited {
-  color: #222 !important;
-  font-weight: 200;
-}
-
-.nav-link {
-  font-size: var(--font-sz-base);
-  background: none !important;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 0;
-  border-bottom: 2px solid transparent;
-  transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
-  margin: 0;
-  padding: 2px 0 3px 0;
-  text-decoration: none;
-  font-family: var(--font-main);
-  font-weight: 200;
-  letter-spacing: 0.011em;
-  color: #222 !important;
-}
-
-.nav-link.active,
-.nav-link[aria-current="page"] {
-  color: #222 !important;
-  font-weight: 400 !important;
-  border-bottom: 2px solid #222 !important;
-  background: none !important;
-}
-
-/* Accordion hover state: only change color to accent, never away from enforced black at rest */
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-  color: var(--kavia-orange) !important;
-  border-bottom: 2px solid var(--kavia-orange) !important;
-  text-decoration: none;
-  background: none !important;
-  font-weight: 400 !important;
-}
-
-/* Defensive: forcibly override nav links (even if someone puts inline styles) */
-.navbar .nav-link,
-.navbar .nav-links .nav-link,
-.navbar a.nav-link,
-.navbar a.nav-link:visited,
-.navbar .logo,
-.navbar .logo span:not(.logo-symbol) {
-  color: #222 !important;
-}
-
-/* LOGO: logo text is minimalist black, symbol remains orange accent */
-/* =================== RAINBOW LOGO GRADIENT EFFECT =================== */
-.logo {
-  font-size: 1.46rem;
-  font-weight: 300;
-  font-family: var(--font-main);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: 0.01em;
-  user-select: none;
-  /* Rainbow gradient text fill for the logo text (but not for nav links/others) */
-  background: linear-gradient(90deg, 
-      #ff4545 0%,      /* Red */
-      #ffbe2f 20%,     /* Orange/Yellow */
-      #fff700 36%,     /* Yellow */
-      #39e669 53%,     /* Green */
-      #33c5ff 68%,     /* Blue */
-      #b86fff 84%,     /* Violet */
-      #ff3ecf 100%     /* Magenta/Pink */
-    );
-  color: transparent !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  /* Defensive, so no other colors override */
-  position: relative;
-  z-index: 1;
-}
-
-/* Extra certainty: force logo text (but not symbol) to black even if nested or inherited */
-.navbar .logo, .navbar .logo span:not(.logo-symbol) {
-  color: #222 !important;
-}
-
-/* only logo symbol gets accent color */
 /* Rainbow gradient for logo text */
 .logo-text {
   background: linear-gradient(90deg,
@@ -269,10 +136,29 @@ body {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
-  /* Inherit font from .logo for proper baseline. */
 }
 
-/* Minimalist navigation links on white, very dark text, smooth hover, thin font */
+/* LOGO CONTAINER: uses flex, no color or background! Only .logo-symbol and .logo-text inside show effect. */
+.logo {
+  font-size: 1.46rem;
+  font-weight: 300;
+  font-family: var(--font-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.01em;
+  user-select: none;
+  background: none !important;
+  color: inherit;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  background-clip: unset !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Defensive: nav links always black even if descendant - maximum specificity */
+.navbar .nav-links,
 .nav-links {
   display: flex;
   align-items: center;
@@ -283,7 +169,6 @@ body {
   color: #222 !important;
 }
 
-/* Force nav-link color to black even if descendant - maximum specificity */
 .navbar .nav-links .nav-link,
 .navbar .nav-link,
 .navbar .nav-link:visited {
@@ -294,7 +179,7 @@ body {
 /* all nav-link: nearly-black, thin */
 .nav-link {
   font-size: var(--font-sz-base);
-  background: none;
+  background: none !important;
   border: none;
   outline: none;
   cursor: pointer;
@@ -308,7 +193,6 @@ body {
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.011em;
-  background: none;
 }
 
 .nav-link.active,
@@ -428,7 +312,6 @@ textarea::placeholder {
 .btn:hover {
   background: #FF8B4D;
 }
-
 .btn-large {
   padding: 14px 30px;
   font-size: 1.19rem;
@@ -470,3 +353,4 @@ a:hover, a:focus {
   .container { padding: 0 2vw; }
   .title { font-size: 1.25rem; }
 }
+
