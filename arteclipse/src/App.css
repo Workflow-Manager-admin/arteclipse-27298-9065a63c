@@ -22,26 +22,37 @@ body {
   margin: 0;
   font-family: var(--font-main);
   color: var(--text-color);
-
-  /* Vibrant classic rainbow gradient, red through blue, high readability */
-  background: linear-gradient(
-      120deg,
-      #FF0000 0%,    /* Red */
-      #FF7F00 25%,   /* Orange */
-      #FFFF00 50%,   /* Yellow */
-      #00FF00 75%,   /* Green */
-      #0000FF 100%   /* Blue - no indigo, violet, or magenta */
-    );
-    /* Remove fallback solid black: rainbow should always show */
-
-  /* Ensure sufficient contrast for all content */
+  background: none; /* Handled by ::after pseudo-element now for opacity control */
   min-height: 100vh;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.005em;
   transition: background 0.36s;
+  position: relative;
+  z-index: 0;
   /* Remove blend mode for vibrant visibility */
+}
+
+/* Subtle rainbow background using a semi-transparent overlay pseudo-element */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    120deg,
+    #FF0000 0%,    /* Red */
+    #FF7F00 25%,   /* Orange */
+    #FFFF00 50%,   /* Yellow */
+    #00FF00 75%,   /* Green */
+    #0000FF 100%   /* Blue */
+  );
+  opacity: 0.18; /* Adjust this for desired subtlety (was vibrant, now subtle) */
+  transition: opacity 0.36s;
 }
 
 /* Gradient headline (blue-pink-purple ombre for prominent phrases, accessible and crisp for all browsers) */
