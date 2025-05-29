@@ -548,35 +548,95 @@ a:hover, a:focus {
 /* Card Typography - minimalist, thin font usage */
 .lesson-card-title {
   font-family: var(--font-main);
-  font-size: 1.04rem;
+  font-size: 1.13rem;
   font-weight: 200;
-  margin-top: 1px;
-  margin-bottom: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: var(--text-color);
-  text-align: center;
-  letter-spacing: 0.012em;
+  text-align: left;
+  letter-spacing: 0.014em;
+  line-height: 1.22;
+  width: 100%;
+  word-break: break-word;
+  background: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .lesson-card-level {
   color: var(--kavia-orange);
   font-family: var(--font-main);
-  font-size: 0.93rem;
+  font-size: 0.96rem;
   font-weight: 200;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   margin-top: 0px;
-  letter-spacing: 0.024em;
-  text-align: center;
+  letter-spacing: 0.018em;
+  text-align: left;
+  line-height: 1.13;
+  width: 100%;
+  background: none;
 }
 
 .lesson-card-desc {
-  color: var(--text-secondary,rgba(255,255,255,0.6));
+  color: var(--text-secondary,rgba(255,255,255,0.66));
   font-family: var(--font-main);
-  font-size: 0.93rem;
+  font-size: 0.97rem;
   font-weight: 200;
   margin-top: 0px;
-  margin-bottom: 1px;
-  text-align: center;
-  letter-spacing: 0.012em;
+  margin-bottom: 0px;
+  text-align: left;
+  letter-spacing: 0.013em;
+  line-height: 1.48;
+  width: 100%;
+  word-break: break-word;
+  background: none;
+}
+
+.lesson-card {
+  background: rgba(255,255,255,0.021);
+  border: 1px solid var(--border-color,rgba(255,255,255,0.11));
+  border-radius: 14px;
+  box-shadow: 0 2.5px 15px 0 #22113c0d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 252px;
+  max-width: 300px;
+  min-height: 258px;
+  padding: 25px 24px 22px 24px;
+  transition: box-shadow 0.18s, border-color 0.15s;
+  font-family: var(--font-main);
+  font-weight: 200;
+  letter-spacing: 0.015em;
+  color: var(--text-color);
+  margin-right: 0;
+  gap: 2px;
+  justify-content: flex-start;
+}
+.lesson-card:hover {
+  border-color: var(--kavia-orange, #E87A41);
+  box-shadow: 0 6px 32px 0 #E87A414a, 0 2px 11px 0 #13012916;
+  cursor: pointer;
+}
+
+/* Make card text left-aligned on most screens, center only on mobile if required by layout, whitespace for readability */
+@media (max-width: 650px) {
+  .lesson-card-title,
+  .lesson-card-level,
+  .lesson-card-desc {
+    text-align: left !important;
+    font-size: 0.88rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    margin-bottom: 1px !important;
+  }
+  .lesson-card {
+    padding: 14px 7px 9px 10px;
+    min-width: 130px;
+    max-width: 150px;
+    gap: 1px;
+  }
 }
 
 /* Responsive: lesson cards shrink on narrower screens */
