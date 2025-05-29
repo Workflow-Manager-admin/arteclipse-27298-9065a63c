@@ -358,29 +358,121 @@ a:hover, a:focus {
   }
 }
 
-/* -------------- LESSONS FLEX STRIPS LAYOUT (new) -------------- */
+/* -------------- LESSONS FLEX STRIPS LAYOUT (updated) -------------- */
 
 /* Container for lessons strips (vertical stack) */
 .lessons-strips-container {
-  width: 100%;
+  width: calc(100vw - 0px);
   margin: 38px 0 0 0;
   padding-bottom: 8px;
   display: flex;
   flex-direction: column;
-  gap: 23px; /* vertical gap between horizontal strips */
+  gap: 27px; /* slight extra vertical gap between horizontal strips */
 }
 
-/* Each horizontal strip (row) containing up to 4 cards */
+/* Each horizontal strip (row) containing up to 4 cards, extending further to the right */
 .lessons-strip-row {
   display: flex;
   flex-direction: row;
-  gap: 24px;
-  justify-content: flex-start; /* stack cards from left */
+  gap: 36px;
+  justify-content: flex-start;
   align-items: stretch;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  width: 92vw;
+  max-width: 1360px;
+  min-width: 840px;
+  margin-left: auto;
+  margin-right: max(-9vw, -80px); /* Visually extend strip to right edge */
+  padding-right: 3vw;
+  box-sizing: border-box;
+  transition: margin 0.2s, width 0.2s;
 }
+
+/* Responsive: for narrower screens, stack cards in strips of 2 or 1 */
+@media (max-width: 1350px) {
+  .lessons-strip-row {
+    width: 98vw;
+    min-width: 0;
+    max-width: 100vw;
+    gap: 22px;
+    margin-right: 0;
+    padding-right: 6vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .lessons-strip-row {
+    gap: 14px;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    margin-left: 0;
+    padding-right: 4vw;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 176px;
+    max-width: 252px;
+  }
+}
+@media (max-width: 950px) {
+  .lessons-strip-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100vw;
+    max-width: 99vw;
+    margin-right: 0;
+    padding-right: 2vw;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 46vw;
+    max-width: 48vw;
+  }
+}
+@media (max-width: 650px) {
+  .lessons-strip-row {
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 98vw;
+    max-width: 99vw;
+    margin: 0 auto;
+  }
+}
+
+/* Remove all previous horizontal scroll/row styles for lessons section */
+
+/* Individual lesson card */
+.lesson-card {
+  background: rgba(255,255,255,0.021);
+  border: 1px solid var(--border-color,rgba(255,255,255,0.11));
+  border-radius: 14px;
+  box-shadow: 0 2.5px 15px 0 #22113c0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 252px;
+  max-width: 300px;
+  min-height: 258px;
+  padding: 24px 22px 18px 22px;
+  transition: box-shadow 0.18s, border-color 0.15s;
+  font-family: var(--font-main);
+  font-weight: 200;
+  letter-spacing: 0.015em;
+  color: var(--text-color);
+  margin-right: 0;
+}
+.lesson-card:hover {
+  border-color: var(--kavia-orange, #E87A41);
+  box-shadow: 0 6px 32px 0 #E87A414a, 0 2px 11px 0 #13012916;
+  cursor: pointer;
+}
+
+/* The rest of the file's lesson card/snippet/typography media queries remain unchanged */
 
 /* Responsive: for narrower screens, stack cards in strips of 2 or 1 */
 @media (max-width: 1100px) {
