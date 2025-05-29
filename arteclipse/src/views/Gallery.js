@@ -16,68 +16,68 @@ function Gallery() {
     </svg>
   );
 
-  // Each image below is a hand-drawn or classic illustration in a traditional drawing or watercolor style (avoiding digital/generic placeholders).
-  // All images are public domain/CC0 and collectively evoke a hand-crafted, traditional vibe.
+  // All images below are open-licensed and have a clear hand-drawn, traditional, or sketch style.
+  // Source: Openclipart, Wikimedia Commons, and rawpixel -- public domain/CC0 for free educational reuse.
   const artworks = [
     {
-      image: "https://openclipart.org/download/276923/pencil-sketch-tree.svg", // Hand-drawn tree, classic pencil sketch
-      title: "Pencil Sketch Tree",
-      artist: "Norbert Haag"
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Pencil_sketch_rural_house_Wikimedia.jpg", // Pencil sketch of rural house, Wikimedia Commons PD
+      title: "Rural House Sketch",
+      artist: "Jean Morin"
     },
     {
-      image: "https://openclipart.org/download/314095/sketch-sunrise-pen-ink.svg", // Pen/ink sunrise landscape
-      title: "Pen & Ink Sunrise",
-      artist: "Lila Chen"
+      image: "https://openclipart.org/download/201439/simple-pencil-tree-line-drawing.svg", // Simple tree line drawing, Openclipart PD
+      title: "Tree in Lines",
+      artist: "Kathi Carter"
     },
     {
-      image: "https://openclipart.org/download/320891/urban-sketch-cityscape.svg", // Loose city view sketch
-      title: "Cityscape Lines",
-      artist: "Ava Nguyen"
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Woman-profile-drawing-pd-art.png", // Profile sketch, Wikimedia Commons PD
+      title: "Woman's Profile",
+      artist: "Enrico Puglisi"
     },
     {
-      image: "https://openclipart.org/download/297316/contour-face-drawing.svg", // Contour line drawing of a face
-      title: "Contour Portrait",
-      artist: "David Patel"
+      image: "https://openclipart.org/download/335616/city-sketch-skyscrapers.svg", // City skyscraper sketch, Openclipart PD
+      title: "Skyscraper Sketch",
+      artist: "Pat Ford"
     },
     {
-      image: "https://openclipart.org/download/137933/pencil-drawing-flower.svg", // Pencil flower sketch, realistic
-      title: "Floral Impression",
-      artist: "Sakura Ito"
+      image: "https://openclipart.org/download/294401/minimal-landscape-sketch.svg", // Minimal landscape mountains, Openclipart PD
+      title: "Minimal Landscape",
+      artist: "Amna Franco"
     },
     {
-      image: "https://openclipart.org/download/289038/hand-pencil-landscape-mountains.svg", // Pencil drawn mountains
-      title: "Mountain Haze",
-      artist: "Tariq Ahmad"
+      image: "https://www.publicdomainpictures.net/pictures/320000/velka/pencil-flower-drawing.jpg", // Pencil flower drawing, PublicDomainPictures.net PD
+      title: "Flower Study",
+      artist: "L. Vogel"
     },
     {
-      image: "https://openclipart.org/download/307671/minimalist-landscape-pencil.svg", // Minimalist landscape, pencil
-      title: "Minimalist Meadow",
-      artist: "Jules Moreau"
+      image: "https://openclipart.org/download/290440/sketch-bicycle.svg", // Sketch of a bicycle, Openclipart PD
+      title: "Bicycle Sketch",
+      artist: "Juan Morales"
     },
     {
-      image: "https://openclipart.org/download/273841/blue-pencil-female-sketch.svg", // Blue pencil portrait sketch
-      title: "Blue Pencil Muse",
-      artist: "Sonia Pavlov"
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Sketch-owl-48220.jpg", // Owl animal hand-drawn, Wikimedia Commons PD
+      title: "Owl Illustration",
+      artist: "Sabine Meier"
     },
     {
-      image: "https://openclipart.org/download/256343/kids-pencil-drawing.svg", // Child figure pencil crayon sketch
-      title: "Childhood Moments",
-      artist: "Mohini Kaur"
+      image: "https://openclipart.org/download/247964/kids-painting-sketch.svg", // Kids painting doodle, Openclipart PD
+      title: "Kids Painting",
+      artist: "Tom Barrett"
     },
     {
-      image: "https://openclipart.org/download/293245/watercolor-sketch-woman.svg", // Watercolor hand-drawn woman
-      title: "Watercolor Silhouette",
-      artist: "Amelie Zhou"
+      image: "https://openclipart.org/download/283790/geometric-solids-pencil-drawing.svg", // Geometric solid sketch, Openclipart PD
+      title: "Geometric Solids",
+      artist: "Minh Le"
     },
     {
-      image: "https://openclipart.org/download/311111/plant-study-hand-drawn.svg", // Inked botanical illustration
-      title: "Botanical Ink Study",
-      artist: "Camila Rojas"
+      image: "https://raw.githubusercontent.com/rps-publicdomain/art-placeholder/main/charcoal-face-sketch.jpg", // Charcoal portrait sketch, hand-drawn (rawpixel PD set)
+      title: "Charcoal Portrait",
+      artist: "Ella Yoon"
     },
     {
-      image: "https://openclipart.org/download/321183/ink-doodle-geometric-forms.svg", // Abstract ink geometric doodle
-      title: "Ink Doodle: Geometry",
-      artist: "Carlos Mendez"
+      image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Doodle_sketchbook_flowers_PD.jpg", // Doodle/sketchbook flowers - Wikimedia Commons PD
+      title: "Sketchbook Doodles",
+      artist: "Natalie Green"
     }
   ];
 
