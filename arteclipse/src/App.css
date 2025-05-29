@@ -83,29 +83,35 @@ body {
   color: #000 !important; /* Force black in navbar */
 }
 
-/* Strong override: any nav text or link child of .navbar gets black (w/high specificity) */
-.navbar, 
-.navbar .logo, 
-.navbar .logo span:not(.logo-symbol),
-.navbar .nav-links, 
-.navbar .nav-links .nav-link, 
-.navbar .nav-link, 
-.navbar .nav-link:visited {
-  color: #000 !important;
+/* Extra specificity for App.js's navbar flexbox layout */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-/* For slightly softer black, some elements use #222 for modern, high-contrast look */
+.navbar, 
 .navbar .logo,
+.navbar .logo span:not(.logo-symbol),
 .navbar .nav-links,
-.nav-link,
+.navbar .nav-links .nav-link,
 .navbar .nav-link,
 .navbar .nav-link:visited,
-.navbar .nav-links .nav-link
+.nav-link,
+.navbar .nav-link[aria-current="page"],
+.navbar .nav-links .nav-link:visited
 {
   color: #222 !important;
+  /* Use nearly-black for all nav items */
 }
 
-/* LOGO: logo text is minimalist black, symbol remains orange accent */
+.navbar .logo-symbol,
+.logo-symbol {
+  color: var(--kavia-orange) !important;
+}
+
+.navbar .logo,
 .logo {
   font-size: 1.46rem;
   font-weight: 300;
@@ -121,29 +127,33 @@ body {
   -webkit-text-fill-color: unset !important;
 }
 
-/* Defensive: .logo anywhere in navbar is forced to dark */
-.navbar .logo, .navbar .logo span:not(.logo-symbol) {
+.navbar .logo span:not(.logo-symbol), .logo span:not(.logo-symbol) {
   color: #222 !important;
 }
 
-/* Logo symbol (icon) should always be orange */
 .logo-symbol {
-  color: var(--kavia-orange) !important;
   background: none !important;
   font-size: 1.42em;
   font-weight: 300;
 }
 
-/* nav-links grouping (nav) always black */
-.navbar .nav-links {
+.navbar .nav-links,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-left: 24px;
+  font-family: var(--font-main);
+  font-weight: 200;
   color: #222 !important;
 }
 
-/* Maximum-strength for all .nav-link text, in navbar, visited or not */
 .navbar .nav-links .nav-link,
 .navbar .nav-link,
 .navbar .nav-link:visited,
-.navbar .nav-link[aria-current="page"] {
+.navbar .nav-link[aria-current="page"],
+.nav-link,
+.nav-link:visited {
   color: #222 !important;
   font-weight: 200;
 }
@@ -154,7 +164,6 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #222 !important;
   border-radius: 0;
   border-bottom: 2px solid transparent;
   transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
@@ -164,10 +173,9 @@ body {
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.011em;
-  background: none !important;
+  color: #222 !important;
 }
 
-/* When nav-link is active or selected, still keep black */
 .nav-link.active,
 .nav-link[aria-current="page"] {
   color: #222 !important;
@@ -176,7 +184,7 @@ body {
   background: none !important;
 }
 
-/* > On hover, only increase weight and accent, never change away from black for other states */
+/* Accordion hover state: only change color to accent, never away from enforced black at rest */
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   color: var(--kavia-orange) !important;
@@ -184,6 +192,16 @@ body {
   text-decoration: none;
   background: none !important;
   font-weight: 400 !important;
+}
+
+/* Defensive: forcibly override nav links (even if someone puts inline styles) */
+.navbar .nav-link,
+.navbar .nav-links .nav-link,
+.navbar a.nav-link,
+.navbar a.nav-link:visited,
+.navbar .logo,
+.navbar .logo span:not(.logo-symbol) {
+  color: #222 !important;
 }
 
 /* LOGO: logo text is minimalist black, symbol remains orange accent */
