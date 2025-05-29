@@ -18,3 +18,11 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/src'
+ERROR in ./src/App.js 5:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/src'
+
+webpack compiled with 1 error
