@@ -72,7 +72,6 @@ function Home() {
 
   return (
     <div className="hero" style={{ gap: "22px" }}>
-      <div className="subtitle">ArtEclipse Home</div>
       <h1 className="title">Welcome to ArtEclipse</h1>
       <div
         className="description"
