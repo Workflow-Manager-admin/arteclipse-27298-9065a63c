@@ -26,3 +26,99 @@ ERROR in ./src/App.js 5:0-74
 Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/src'
 
 webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/src'
+LOG from webpack.FileSystemInfo
+<w> Managed item /home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/node_modules/react-router-dom isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
++ 13 hidden lines
+
+ERROR in ./src/App.js 5:0-74
+Module not found: Error: Can't resolve 'react-router-dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/src'
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+Attempted import error: 'BrowserRouter' is not exported from 'react-router-dom' (imported as 'Router').
+ERROR in ./src/App.js 150:30-36
+export 'BrowserRouter' (imported as 'Router') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 199:41-47
+export 'Routes' (imported as 'Routes') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 200:44-49
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 211:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 222:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 233:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 244:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./node_modules/react-router-dom/dist/index.mjs 13:0-66
+Module not found: Error: Can't resolve 'react-router/dom' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/node_modules/react-router-dom/dist'
+
+ERROR in ./node_modules/react-router-dom/dist/index.mjs 14:0-29
+Module not found: Error: Can't resolve 'react-router' in '/home/kavia/workspace/code-generation/arteclipse-27298-9065a63c/arteclipse/node_modules/react-router-dom/dist'
+
+webpack compiled with 9 errors
+Compiling...
+Failed to compile.
+
+Attempted import error: 'BrowserRouter' is not exported from 'react-router-dom' (imported as 'Router').
+ERROR in ./src/App.js 150:30-36
+export 'BrowserRouter' (imported as 'Router') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 199:41-47
+export 'Routes' (imported as 'Routes') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 200:44-49
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 211:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 222:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 233:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 244:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+webpack compiled with 7 errors
+Compiling...
+Failed to compile.
+
+Attempted import error: 'BrowserRouter' is not exported from 'react-router-dom' (imported as 'Router').
+ERROR in ./src/App.js 150:30-36
+export 'BrowserRouter' (imported as 'Router') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 199:41-47
+export 'Routes' (imported as 'Routes') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 200:44-49
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 211:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 222:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 233:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+ERROR in ./src/App.js 244:43-48
+export 'Route' (imported as 'Route') was not found in 'react-router-dom' (module has no exports)
+
+webpack compiled with 7 errors
