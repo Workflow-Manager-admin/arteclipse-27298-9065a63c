@@ -140,7 +140,7 @@ function Lessons() {
       {/* Intro block, visually distinct and aligned above strips */}
       <section className="lessons-intro" aria-label="Lessons Introduction">
         <div className="subtitle">Interactive Lessons</div>
-        <h1 className="title">Video Drawing Course: Beginner to Advanced</h1>
+        <h1 className="title"><span className="gradient-headline">Video Drawing Course: Beginner to Advanced</span></h1>
         <div className="description">
           16 immersive, minimalist video lessons—explore drawing from the simplest mark to advanced illustration mastery. Each card is a complete 10-hour journey.
         </div>
