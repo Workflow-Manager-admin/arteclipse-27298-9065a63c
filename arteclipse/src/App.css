@@ -358,7 +358,9 @@ a:hover, a:focus {
   }
 }
 
-/* LESSONS: Grid layout for minimalist video lecture cards */
+/* -------------- LESSONS GRID LAYOUT (updated) -------------- */
+
+/* Grid-based Lessons Section */
 .lessons-grid-container {
   width: 100%;
   margin: 38px 0 0 0;
@@ -374,6 +376,7 @@ a:hover, a:focus {
   padding: 7px 0 7px 0;
 }
 
+/* Responsive grid breaks to 2/1 columns for narrower screens */
 @media (max-width: 1100px) {
   .lessons-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -386,6 +389,8 @@ a:hover, a:focus {
     grid-gap: 14px 0px;
   }
 }
+
+/* Remove all previous horizontal scroll/row styles for lessons section */
 
 /* Individual lesson card */
 .lesson-card {
@@ -458,12 +463,8 @@ a:hover, a:focus {
   letter-spacing: 0.012em;
 }
 
-/* Responsive: allow horizontal scroll to work nicely on mobile */
+/* Responsive: lesson cards shrink on narrower screens */
 @media (max-width: 900px) {
-  .lessons-card-row {
-    min-width: unset;
-    gap: 17px;
-  }
   .lesson-card {
     min-width: 155px;
     max-width: 200px;
@@ -478,9 +479,6 @@ a:hover, a:focus {
   }
 }
 @media (max-width: 650px) {
-  .lessons-card-row {
-    gap: 10px;
-  }
   .lesson-card {
     padding: 13px 3px 9px 3px;
     min-width: 130px;
