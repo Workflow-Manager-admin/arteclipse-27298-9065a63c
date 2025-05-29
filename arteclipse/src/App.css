@@ -175,8 +175,8 @@ body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: var(--kavia-purple) !important;
-  border-bottom: 2px solid var(--kavia-purple);
+  color: var(--kavia-blue) !important;
+  border-bottom: 2px solid var(--kavia-blue);
   text-decoration: none;
   background: none;
   font-weight: 400;
