@@ -47,9 +47,9 @@ body {
   transition: background 0.36s;
 }
 
-/* Gradient headline (pink-purple-blue for prominent phrases) */
+/* Gradient headline (blue-pink-purple ombre for prominent phrases) */
 .gradient-headline {
-  background: linear-gradient(90deg, #ff5fa2 8%, #a259ff 55%, #2ec4fd 92%);
+  background: linear-gradient(90deg, #2ec4fd 0%, #ff5fa2 51%, #a259ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
