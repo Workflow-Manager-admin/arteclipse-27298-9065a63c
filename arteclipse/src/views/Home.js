@@ -73,7 +73,7 @@ function Home() {
   return (
     <div className="hero" style={{ gap: "22px" }}>
       <h1 className="title">
-        <span className="gradient-headline">Welcome to ArtEclipse</span>
+        <span className="gradient-headline">Welcome to ArtS+</span>
       </h1>
       <div
         className="description"
@@ -90,7 +90,7 @@ function Home() {
         }}
         aria-label="Introduction"
       >
-        ArtEclipse is a minimalist, interactive platform for learning and exploring art. Our mission is to foster creativity through clean design, immersive lessons, and a distraction-free environment. Experience art education with elegant simplicity—where the focus is entirely on ideas, techniques, and inspired practice.
+        ArtS+ is a minimalist, interactive platform for learning and exploring art. Our mission is to foster creativity through clean design, immersive lessons, and a distraction-free environment. Experience art education with elegant simplicity—where the focus is entirely on ideas, techniques, and inspired practice.
       </div>
       <div className="description">
         Discover, learn, and showcase art in a distraction-free space.

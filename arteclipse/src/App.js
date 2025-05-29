@@ -59,7 +59,7 @@ function App() {
               </span>
               {/* Visually subordinate text label for accessiblity/minor presence */}
               <span className="logo-text logo-sub">
-                ArtEclipse
+                ArtS+
               </span>
             </div>
             <div className="nav-links" aria-label="Main Navigation">
