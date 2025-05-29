@@ -58,7 +58,7 @@ body {
 
 /* NAVIGATION BAR */
 .navbar {
-  background: var(--kavia-accent);
+  background: #fff !important;
   padding: 13px 0 12px 0;
   display: flex;
   align-items: center;
@@ -70,10 +70,10 @@ body {
   left: 0;
   z-index: 10;
   box-sizing: border-box;
-  transition: box-shadow 0.16s;
+  transition: box-shadow 0.16s, background 0.22s;
   box-shadow: 0 1.5px 7px 0 rgba(18,0,31,0.09);
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
+  font-family: var(--font-main);
+  font-weight: 200;
   letter-spacing: 0.007em;
 }
 
