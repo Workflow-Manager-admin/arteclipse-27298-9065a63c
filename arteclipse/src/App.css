@@ -47,6 +47,36 @@ body {
   color: var(--kavia-orange);
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-link {
+  font-size: 1.02rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.16s, border 0.18s;
+  margin: 0 0 0 0;
+  padding: 2px 0;
+}
+
+.nav-link:first-child {
+  color: var(--text-color);
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--kavia-orange);
+  border-bottom: 2px solid var(--kavia-orange);
+  text-decoration: none;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
