@@ -21,7 +21,24 @@ body {
   margin: 0;
   font-family: var(--font-main);
   color: var(--text-color);
-  background: linear-gradient(120deg, var(--primary-bg) 0%, var(--ombre-end) 100%);
+  /* Minimalist deep black base with a subtle rainbow gradient overlay (radial & linear mix for softness) */
+  background:
+    radial-gradient(ellipse 120% 90% at 50% 10%, 
+      rgba(255,0,120,.08) 0%, 
+      rgba(0,255,255,.07) 33%,
+      rgba(0,144,255,.04) 62%, 
+      rgba(255,255,100,.03) 82%,
+      rgba(0,0,0,0) 100%
+    ),
+    linear-gradient(115deg,
+      rgba(248, 54, 0, 0.13) 6%,
+      rgba(248, 194, 0, 0.11) 15%,
+      rgba(0,255,180,0.11) 35%,
+      rgba(85,41,255,0.12) 54%,
+      rgba(255,0,160,0.12) 73%,
+      rgba(0,0,0,0.14) 100%
+    ),
+    #000000;
   min-height: 100vh;
   /* Remove scroll glow / borders / extra shadows */
   box-sizing: border-box;
