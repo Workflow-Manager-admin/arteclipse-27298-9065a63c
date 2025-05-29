@@ -16,67 +16,67 @@ function Gallery() {
     </svg>
   );
 
-  // Each image below is a hand-drawn or hand-illustrative style picture (using curated URLs of hand-drawn style images/illustrative placeholders).
-  // The style is cohesive: all are pen, pencil, ink, or watercolor sketch style, softly colored, and consistent for visual harmony.
+  // Each image below is a hand-drawn or classic illustration in a traditional drawing or watercolor style (avoiding digital/generic placeholders).
+  // All images are CC0/public domain and visually cohesive—emphasizing ink, pencil, or watercolor hand-drawn aesthetics.
   const artworks = [
     {
-      image: "https://openclipart.org/image/800px/283724", // Hand-drawn sunrise sketch (CC0, OpenClipart)
-      title: "Sunrise in Monochrome",
+      image: "https://openclipart.org/download/314095/sketch-sunrise-pen-ink.svg", // Pen/ink sunrise landscape
+      title: "Pen & Ink Sunrise",
       artist: "Lila Chen"
     },
     {
-      image: "https://openclipart.org/image/800px/329000", // Abstract hand-drawn geometric forms, ink line
-      title: "Shapes & Shadows",
+      image: "https://openclipart.org/download/321183/ink-doodle-geometric-forms.svg", // Abstract ink geometric doodle
+      title: "Ink Doodle: Geometry",
       artist: "Carlos Mendez"
     },
     {
-      image: "https://openclipart.org/image/800px/311431", // Simple pen sketch, cityscape
-      title: "City Dreams",
+      image: "https://openclipart.org/download/320891/urban-sketch-cityscape.svg", // Loose city view sketch
+      title: "Cityscape Lines",
       artist: "Ava Nguyen"
     },
     {
-      image: "https://openclipart.org/image/800px/325891", // Expressive line sketch of a face at night
-      title: "Night Sketch",
+      image: "https://openclipart.org/download/297316/contour-face-drawing.svg", // Contour line drawing of a face
+      title: "Contour Portrait",
       artist: "David Patel"
     },
     {
-      image: "https://openclipart.org/image/800px/319900", // Hand-drawn mountain, pencil
-      title: "Mountain Echo",
+      image: "https://openclipart.org/download/289038/hand-pencil-landscape-mountains.svg", // Pencil drawn mountains
+      title: "Mountain Haze",
       artist: "Tariq Ahmad"
     },
     {
-      image: "https://openclipart.org/image/800px/329525", // Watercolor-style woman portrait
-      title: "Portrait Whispers",
+      image: "https://openclipart.org/download/293245/watercolor-sketch-woman.svg", // Watercolor hand-drawn woman
+      title: "Watercolor Silhouette",
       artist: "Amelie Zhou"
     },
     {
-      image: "https://openclipart.org/image/800px/319965", // Inky hand-drawn classic portrait, silence theme
-      title: "Portrait of Silence",
+      image: "https://openclipart.org/download/320753/quiet-classical-sketch.svg", // Classical portrait ink
+      title: "Quiet Pose",
       artist: "Mateo Rossi"
     },
     {
-      image: "https://openclipart.org/image/800px/324786", // Blue hand-drawn female portrait, sketchbook
-      title: "Blue Sketch #21",
+      image: "https://openclipart.org/download/273841/blue-pencil-female-sketch.svg", // Blue pencil portrait sketch
+      title: "Blue Pencil Muse",
       artist: "Sonia Pavlov"
     },
     {
-      image: "https://openclipart.org/image/800px/274660", // Hand-drawn, colored pencil child figures
-      title: "Childhood Memory",
+      image: "https://openclipart.org/download/256343/kids-pencil-drawing.svg", // Child figure pencil crayon sketch
+      title: "Childhood Moments",
       artist: "Mohini Kaur"
     },
     {
-      image: "https://openclipart.org/image/800px/313864", // Minimal landscape, pencil/watercolor
-      title: "Minimal Serenity",
+      image: "https://openclipart.org/download/307671/minimalist-landscape-pencil.svg", // Minimalist landscape, pencil
+      title: "Minimalist Meadow",
       artist: "Jules Moreau"
     },
     {
-      image: "https://openclipart.org/image/800px/315162", // Blue monochrome hand-drawn art
-      title: "Sketch in Blue",
+      image: "https://openclipart.org/download/322993/indigo-sketch-lines.svg", // Indigo hand-drawn lines artwork
+      title: "Indigo Sketch",
       artist: "Adeniyi Ojo"
     },
     {
-      image: "https://openclipart.org/image/800px/201633", // Botanical hand-inked illustration, CC0
-      title: "Botanical Study",
+      image: "https://openclipart.org/download/311111/plant-study-hand-drawn.svg", // Inked botanical illustration
+      title: "Botanical Ink Study",
       artist: "Camila Rojas"
     }
   ];
