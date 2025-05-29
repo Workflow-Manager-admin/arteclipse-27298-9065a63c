@@ -358,35 +358,59 @@ a:hover, a:focus {
   }
 }
 
-/* -------------- LESSONS GRID LAYOUT (updated) -------------- */
+/* -------------- LESSONS FLEX STRIPS LAYOUT (new) -------------- */
 
-/* Grid-based Lessons Section */
-.lessons-grid-container {
+/* Container for lessons strips (vertical stack) */
+.lessons-strips-container {
   width: 100%;
   margin: 38px 0 0 0;
   padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px; /* vertical gap between horizontal strips */
 }
 
-.lessons-card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-gap: 28px 24px;
-  justify-items: center;
+/* Each horizontal strip (row) containing up to 4 cards */
+.lessons-strip-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-start; /* stack cards from left */
   align-items: stretch;
-  padding: 7px 0 7px 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-/* Responsive grid breaks to 2/1 columns for narrower screens */
+/* Responsive: for narrower screens, stack cards in strips of 2 or 1 */
 @media (max-width: 1100px) {
-  .lessons-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 23px 13px;
+  .lessons-strip-row {
+    gap: 14px;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 150px;
+    max-width: 210px;
   }
 }
-@media (max-width: 700px) {
-  .lessons-card-grid {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-gap: 14px 0px;
+@media (max-width: 850px) {
+  .lessons-strip-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 46vw;
+    max-width: 47vw;
+  }
+}
+@media (max-width: 650px) {
+  .lessons-strip-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lessons-strip-row .lesson-card {
+    min-width: 98vw;
+    max-width: 99vw;
+    margin: 0 auto;
   }
 }
 
