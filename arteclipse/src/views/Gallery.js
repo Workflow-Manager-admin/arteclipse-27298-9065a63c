@@ -20,9 +20,9 @@ function Gallery() {
   // Each card is unique and all illustrations are hand-drawn or sketched (pencil, pen, or ink).
   const artworks = [
     {
-      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80", // Unsplash, CC0, hand-drawn landscape sketch
-      title: "Mountain Landscape Sketch",
-      artist: "Unsplash / Robert Bye (CC0). Delicate pencil study with atmospheric perspective."
+      image: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Vincent_van_Gogh_-_Landscape_with_Houses_%28Sketch%29_-_Google_Art_Project.jpg",
+      title: "Landscape with Houses (Van Gogh, Sketch)",
+      artist: "Vincent van Gogh, public domain (WikiArt). Lively farmhouse pen and ink drawing."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/3/34/Vincent_van_Gogh_-_Pencil_Sketch_of_a_Woman_Seated_-_Google_Art_Project.jpg",
@@ -30,24 +30,24 @@ function Gallery() {
       artist: "Vincent van Gogh, public domain. Pencil and chalk figure study."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Drawn_Cat_Crosshatch.jpg",
+      image: "https://www.rawpixel.com/image/6220555/vintage-engraving-drawing-cat",
       title: "Cat Crosshatch Drawing",
-      artist: "Wikimedia Commons. Lively crosshatch studies animal volume with classic penwork."
+      artist: "Rawpixel, CC0. Classic 19th-century engraving style with delicate fur patterns."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2016/12/06/17/20/sketch-1882227_1280.jpg",
-      title: "Urban Alley Sketch",
-      artist: "Pixabay, public domain. Pen and ink study with linear perspective."
+      image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Fritz_Bennewitz_-_Pencil_Drawing_-_Landscape_-_Google_Art_Project.jpg",
+      title: "Hillside Pencil Scene",
+      artist: "Fritz Bennewitz, public domain. Rolling hills with expressive pencil shading."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/8/80/Da_Vinci_-_sketch.jpg",
-      title: "Da Vinci—Inventor’s Sketch",
-      artist: "Leonardo da Vinci, public domain (Wiki). Ingenious lines from one of his journals."
+      image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Leonardo_da_Vinci_-_Study_of_Old_Man_%28Drawing%29.jpg",
+      title: "Da Vinci—Aged Man Study",
+      artist: "Leonardo da Vinci, public domain (Wiki). Subtle lines from a Renaissance master."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2014/11/05/08/21/horse-518678_1280.jpg",
+      image: "https://www.rawpixel.com/image/430943/free-public-domain-hand-drawn-horse-drawing",
       title: "Horse Motion Study",
-      artist: "Pixabay, public domain. Expressive graphite sketch of a galloping horse."
+      artist: "Rawpixel, CC0. Energetic graphite sketch of galloping horse anatomy."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Pencil_sketch_of_hands_by_Vincent_van_Gogh_%281885%29.jpg",
@@ -57,12 +57,12 @@ function Gallery() {
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Henry_Holiday_-_Dream_Caravan_-_sketch.jpg",
       title: "Dream Caravan (Henry Holiday, 1870)",
-      artist: "Wikimedia Commons, public domain. Whimsical ink and pen fantasy illustration."
+      artist: "Henry Holiday, public domain (Wikimedia). Whimsical ink and pen fantasy illustration."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2013/07/12/15/02/sketch-149044_1280.png",
-      title: "Old Alley (Pencil Render)",
-      artist: "Pixabay, public domain. Atmospheric depth sketch of classic street scene."
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/99/Old_Man_Sketch_%28free_hand_drawing%29.png",
+      title: "Old Man—Freehand Sketch",
+      artist: "Wikimedia Commons. Expressive graphite portrait with shading."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/4/44/Onderdonk-Pencil-sketch,Texas-landscape.jpg",
@@ -70,9 +70,9 @@ function Gallery() {
       artist: "Julian Onderdonk, public domain (Wiki). Soft shading defines American Southwest."
     },
     {
-      image: "https://cdn.pixabay.com/photo/2017/01/06/19/15/black-and-white-1958719_1280.jpg",
-      title: "Tree Silhouette Sketch",
-      artist: "Pixabay, public domain. Ink linework and hatching for dramatic foliage."
+      image: "https://www.rawpixel.com/image/3068927/hand-drawn-tree-sketch-on-white-background",
+      title: "Tree Sketch (Rawpixel CC0)",
+      artist: "Rawpixel, public domain. Minimalist and linear hand-drawn botanical study."
     },
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/7/71/John_Singer_Sargent_-_Sketch_of_Owl.jpg",
