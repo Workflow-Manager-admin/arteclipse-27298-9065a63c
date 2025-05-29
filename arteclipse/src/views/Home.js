@@ -144,6 +144,166 @@ function Home() {
         ))}
       </section>
     </div>
+    {/* Sign Up / Log In Form Section */}
+    <section
+      style={{
+        width: "100%",
+        marginTop: 56,
+        marginBottom: 10,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+      aria-label="Sign Up or Log In"
+    >
+      <div
+        className="auth-form-container"
+        style={{
+          width: "100%",
+          maxWidth: 370,
+          background: "rgba(255,255,255,0.018)",
+          border: "1.1px solid var(--border-color,rgba(255,255,255,0.09))",
+          borderRadius: 16,
+          boxShadow: "0 1.5px 19px 0 #28144113",
+          padding: "28px 23px 22px 23px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 14,
+          fontFamily: "var(--font-main)",
+        }}
+      >
+        <div
+          style={{
+            fontFamily: "var(--font-main)",
+            fontWeight: 200,
+            fontSize: "1.17rem",
+            color: "var(--text-color,#fff)",
+            marginBottom: 2,
+            letterSpacing: "0.006em",
+          }}
+        >
+          Sign Up or Log In
+        </div>
+        <form
+          className="auth-form"
+          style={{
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            gap: 12,
+          }}
+          autoComplete="off"
+          onSubmit={e => e.preventDefault()}
+        >
+          <input
+            type="email"
+            placeholder="Email address"
+            style={{
+              width: "100%",
+              padding: "12px 15px",
+              border: "1.1px solid var(--border-color,rgba(255,255,255,0.14))",
+              borderRadius: 6,
+              background: "rgba(255,255,255,0.025)",
+              color: "var(--text-color,#fff)",
+              fontFamily: "var(--font-main)",
+              fontWeight: 200,
+              fontSize: "1.04rem",
+              outline: "none",
+              marginBottom: 2,
+              letterSpacing: "0.013em",
+              transition: "border-color 0.16s",
+            }}
+            autoCapitalize="off"
+            autoCorrect="off"
+            autoFocus={false}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            style={{
+              width: "100%",
+              padding: "12px 15px",
+              border: "1.1px solid var(--border-color,rgba(255,255,255,0.14))",
+              borderRadius: 6,
+              background: "rgba(255,255,255,0.025)",
+              color: "var(--text-color,#fff)",
+              fontFamily: "var(--font-main)",
+              fontWeight: 200,
+              fontSize: "1.04rem",
+              outline: "none",
+              letterSpacing: "0.013em",
+              transition: "border-color 0.16s",
+            }}
+            minLength={6}
+            required
+          />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              gap: 8,
+              marginTop: 2,
+              justifyContent: "center",
+            }}
+          >
+            <button
+              type="submit"
+              className="btn"
+              style={{
+                fontWeight: 300,
+                fontFamily: "var(--font-main)",
+                letterSpacing: "0.01em",
+                fontSize: "1.08rem",
+                minWidth: 0,
+                flex: 1,
+                maxWidth: "49%",
+                borderRadius: 6,
+              }}
+            >
+              Sign Up
+            </button>
+            <button
+              type="submit"
+              className="btn"
+              style={{
+                fontWeight: 300,
+                fontFamily: "var(--font-main)",
+                letterSpacing: "0.01em",
+                fontSize: "1.08rem",
+                minWidth: 0,
+                flex: 1,
+                maxWidth: "49%",
+                borderRadius: 6,
+                background: "rgba(255,255,255,0.05)",
+                color: "var(--text-color,#fff)",
+                border: "1.1px solid var(--border-color,rgba(255,255,255,0.15))",
+                marginLeft: 0,
+              }}
+            >
+              Log In
+            </button>
+          </div>
+        </form>
+      </div>
+      {/* Minimal, responsive tweak for very small screens */}
+      <style>{`
+        @media (max-width: 500px) {
+          .auth-form-container {
+            max-width: 100vw;
+            padding: 18px 3vw 16px 3vw;
+          }
+        }
+        .auth-form input:focus {
+          border-color: var(--kavia-orange,#E87A41);
+        }
+        .auth-form input {
+          background: rgba(255,255,255,0.021);
+        }
+      `}</style>
+    </section>
   );
 }
 
