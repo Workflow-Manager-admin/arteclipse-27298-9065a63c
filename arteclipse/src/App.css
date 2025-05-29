@@ -39,7 +39,7 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
   width: 100vw;
   height: 100vh;
@@ -53,6 +53,19 @@ body::after {
   );
   opacity: 0.18; /* Adjust this for desired subtlety (was vibrant, now subtle) */
   transition: opacity 0.36s;
+}
+
+/* Black semi-transparent overlay above rainbow, covers root for dim effect */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* Must be above ::after, below app content */
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.62); /* semi-transparent black */
+  transition: background 0.36s;
 }
 
 /* Gradient headline (blue-pink-purple ombre for prominent phrases, accessible and crisp for all browsers) */
