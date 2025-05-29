@@ -128,12 +128,12 @@ body {
 }
 /* Visually subordinate the logo text if used next to palette icon */
 .logo-text.logo-sub {
-  opacity: 0.58;
+  opacity: 0.72;
   font-size: 1.01em;
   margin-left: 5px;
   letter-spacing: 0.013em;
   font-weight: 250;
-  color: #222 !important;
+  color: #fff !important;
   background: none !important;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
