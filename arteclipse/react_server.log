@@ -2,3 +2,31 @@
 > react-kavia@0.1.0 start
 > react-scripts start
 
+(node:14313) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:14313) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Failed to compile.
+
+[eslint] 
+src/views/Gallery.js
+  Line 237:18:  'address' is not defined     no-undef
+  Line 238:26:  'setAddress' is not defined  no-undef
+  Line 257:10:  'address' is not defined     no-undef
+  Line 272:14:  'address' is not defined     no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/views/Gallery.js
+  Line 237:18:  'address' is not defined     no-undef
+  Line 238:26:  'setAddress' is not defined  no-undef
+  Line 257:10:  'address' is not defined     no-undef
+  Line 272:14:  'address' is not defined     no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
