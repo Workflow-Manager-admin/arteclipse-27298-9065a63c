@@ -1,4 +1,3 @@
-// Minimalist Address Entry for Gallery, harmonized with Home/Lessons
 import React from "react";
 import FloatingActionButton from "../components/FloatingActionButton";
 import "../components/FloatingActionButton.css";
@@ -8,9 +7,6 @@ import "../components/FloatingActionButton.css";
  * Introduction text plus a responsive grid of artwork cards using the minimalist thin font.
  */
 function Gallery() {
-  // Minimalist stateful address box, matches Home.js and Lessons.js
-  const [address, setAddress] = React.useState("");
-
   // Minimalist plus icon in SVG (add/create)
   const plusIcon = (
     <svg viewBox="0 0 32 32" aria-hidden="true">
