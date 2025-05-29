@@ -456,3 +456,4 @@ src/views/Home.js
   Line 147:4:  Parsing error: Unexpected token, expected "," (147:4)
 
 webpack compiled with 2 errors
+Compiling...
