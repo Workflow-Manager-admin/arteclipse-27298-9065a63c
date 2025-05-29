@@ -339,3 +339,21 @@ a:hover, a:focus {
   .title { font-size: 1.25rem; }
 }
 
+/* Minimalist Auth Form Styles */
+.auth-form-container {
+  /* main container handled inline for spacing/look */
+}
+
+.auth-form input {
+  background: rgba(255,255,255,0.021);
+}
+.auth-form input:focus {
+  border-color: var(--kavia-orange,#E87A41);
+}
+
+@media (max-width: 500px) {
+  .auth-form-container {
+    max-width: 100vw;
+    padding: 18px 3vw 16px 3vw;
+  }
+}

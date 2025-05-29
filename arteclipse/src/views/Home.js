@@ -288,21 +288,6 @@ function Home() {
           </div>
         </form>
       </div>
-      {/* Minimal, responsive tweak for very small screens */}
-      <style>{`
-        @media (max-width: 500px) {
-          .auth-form-container {
-            max-width: 100vw;
-            padding: 18px 3vw 16px 3vw;
-          }
-        }
-        .auth-form input:focus {
-          border-color: var(--kavia-orange,#E87A41);
-        }
-        .auth-form input {
-          background: rgba(255,255,255,0.021);
-        }
-      `}</style>
     </section>
   );
 }
