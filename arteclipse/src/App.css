@@ -323,6 +323,51 @@ a:hover, a:focus {
   .title { font-size: 1.25rem; }
 }
 
+/* ----------- Minimalist Profile Sections ----------- */
+.profile-card-min {
+  background: rgba(255,255,255,0.015);
+  border: 1px solid var(--border-color,rgba(255,255,255,0.09));
+  border-radius: 14px;
+  box-shadow: 0 1.5px 13px 0 #2110340d;
+  margin-bottom: 24px;
+  padding: 22px 22px 18px 22px;
+  font-family: var(--font-main);
+  font-weight: 200;
+  color: var(--text-color);
+  letter-spacing: 0.01em;
+  min-width: 0;
+  transition: box-shadow 0.15s, border-color 0.13s;
+}
+.profile-section-title {
+  font-size: 1.19rem;
+  color: var(--kavia-blue, #2ec4fd);
+  font-weight: 200;
+  letter-spacing: 0.022em;
+  margin-bottom: 5px;
+}
+.profile-label {
+  font-size: 1.01rem;
+  color: var(--text-secondary,rgba(255,255,255,0.67));
+  font-weight: 200;
+  margin-bottom: 1px;
+  letter-spacing: 0.011em;
+}
+.profile-value {
+  font-size: 1.13rem;
+  color: var(--text-color,#fff);
+  font-weight: 200;
+  letter-spacing: 0.013em;
+}
+
+/* Responsive grid for profile sections */
+@media (max-width: 920px) {
+  .profile-grid {
+    grid-template-columns: 1fr !important;
+    gap: 13px !important;
+  }
+}
+
+
 /* Minimalist Auth Form Styles */
 .auth-form-container {
   /* main container handled inline for spacing/look */
