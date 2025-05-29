@@ -8,8 +8,8 @@ function Home() {
   const teacherPhotos = [
     // Elena Rivera
     "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&w=160&q=80",
-    // Kenji Mori
-    "https://images.unsplash.com/photo-1519340333755-c190485c1697?auto=format&fit=facearea&w=160&q=80",
+    // Kenji Mori - changed to a clear, front-facing, minimal portrait photo (Unsplash, visible headshot)
+    "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=160&q=80",
     // Nia Adewale
     "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=160&q=80"
   ];
