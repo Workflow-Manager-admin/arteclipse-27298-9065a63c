@@ -18,63 +18,76 @@ function Gallery() {
 
   // Sample artwork data ("assets" could be used - for now, all placeholders)
   const artworks = [
+    // All images use Unsplash, Pexels, or OpenArt prompt-based illustrations for themed matches.
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=1", // placeholder
+      image:
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80", // Sunrise-like, monochrome
       title: "Sunrise in Monochrome",
       artist: "Lila Chen"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=2",
+      image:
+        "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80", // Abstract shapes, shadows
       title: "Shapes & Shadows",
       artist: "Carlos Mendez"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=3",
+      image:
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", // City dream, digital art style
       title: "City Dreams",
       artist: "Ava Nguyen"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=4",
+      image:
+        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // Night sketch, dark palette, handdrawn look
       title: "Night Sketch",
       artist: "David Patel"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=5",
+      image:
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80", // Mountain scene, echoing lines
       title: "Mountain Echo",
       artist: "Tariq Ahmad"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=6",
+      image:
+        "https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&w=400&q=80", // Digital, abstract, "static" whispers style
       title: "Digital Whispers",
       artist: "Amelie Zhou"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=7",
+      image:
+        "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80", // Soft, silent, contemplative portrait
       title: "Portrait of Silence",
       artist: "Mateo Rossi"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=8",
+      image:
+        "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&w=400&q=80", // Blue toned digital sketch
       title: "Blue Sketch #21",
       artist: "Sonia Pavlov"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=9",
+      image:
+        "https://images.unsplash.com/photo-1519121783345-dc3859dcfaa9?auto=format&fit=crop&w=400&q=80", // Illustrative, playful
       title: "Childhood Memory",
       artist: "Mohini Kaur"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=10",
+      image:
+        "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&w=400&q=80", // Tranquil minimalist landscape
       title: "Minimal Serenity",
       artist: "Jules Moreau"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=11",
+      image:
+        "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=400&q=80", // Pen-and-blue-ink handdrawn sketch
       title: "Sketch in Blue",
       artist: "Adeniyi Ojo"
     },
     {
-      image: "https://source.unsplash.com/collection/190727/400x300?sig=12",
+      image:
+        "https://images.unsplash.com/photo-1465101178521-c1a9136a76c9?auto=format&fit=crop&w=400&q=80", // Botanical realistic handdrawn
       title: "Botanical Study",
       artist: "Camila Rojas"
     },
