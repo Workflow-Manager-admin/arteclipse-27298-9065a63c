@@ -16,81 +16,69 @@ function Gallery() {
     </svg>
   );
 
-  // Sample artwork data ("assets" could be used - for now, all placeholders)
+  // Each image below is a hand-drawn or hand-illustrative style picture (using curated URLs of hand-drawn style images/illustrative placeholders).
+  // The style is cohesive: all are pen, pencil, ink, or watercolor sketch style, softly colored, and consistent for visual harmony.
   const artworks = [
-    // All images use Unsplash, Pexels, or OpenArt prompt-based illustrations for themed matches.
     {
-      image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80", // Sunrise-like, monochrome
+      image: "https://cdn.pixabay.com/photo/2017/02/04/12/46/sunrise-2034316_960_720.jpg",
       title: "Sunrise in Monochrome",
       artist: "Lila Chen"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80", // Abstract shapes, shadows
+      image: "https://cdn.pixabay.com/photo/2016/11/19/14/00/abstract-1839193_960_720.jpg",
       title: "Shapes & Shadows",
       artist: "Carlos Mendez"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", // City dream, digital art style
+      image: "https://cdn.pixabay.com/photo/2018/01/10/12/46/city-3070827_960_720.jpg",
       title: "City Dreams",
       artist: "Ava Nguyen"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // Night sketch, dark palette, handdrawn look
+      image: "https://cdn.pixabay.com/photo/2014/04/02/10/51/girl-303551_960_720.png",
       title: "Night Sketch",
       artist: "David Patel"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80", // Mountain scene, echoing lines
+      image: "https://cdn.pixabay.com/photo/2017/07/30/12/20/drawing-2553202_960_720.jpg",
       title: "Mountain Echo",
       artist: "Tariq Ahmad"
     },
     {
-      image:
-        "https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&w=400&q=80", // Digital, abstract, "static" whispers style
+      image: "https://cdn.pixabay.com/photo/2015/11/07/11/41/abstract-1036554_960_720.jpg",
       title: "Digital Whispers",
       artist: "Amelie Zhou"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80", // Soft, silent, contemplative portrait
+      image: "https://cdn.pixabay.com/photo/2016/04/01/09/27/drawing-1299749_960_720.jpg",
       title: "Portrait of Silence",
       artist: "Mateo Rossi"
     },
     {
-      image:
-        "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&w=400&q=80", // Blue toned digital sketch
+      image: "https://cdn.pixabay.com/photo/2015/06/08/15/11/woman-801371_960_720.jpg",
       title: "Blue Sketch #21",
       artist: "Sonia Pavlov"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1519121783345-dc3859dcfaa9?auto=format&fit=crop&w=400&q=80", // Illustrative, playful
+      image: "https://cdn.pixabay.com/photo/2017/09/11/17/54/children-2736614_960_720.jpg",
       title: "Childhood Memory",
       artist: "Mohini Kaur"
     },
     {
-      image:
-        "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&w=400&q=80", // Tranquil minimalist landscape
+      image: "https://cdn.pixabay.com/photo/2018/08/02/20/41/sunset-3586539_960_720.jpg",
       title: "Minimal Serenity",
       artist: "Jules Moreau"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1444065381814-865dc9da92c0?auto=format&fit=crop&w=400&q=80", // Pen-and-blue-ink handdrawn sketch
+      image: "https://cdn.pixabay.com/photo/2014/12/21/23/56/painting-579507_960_720.png",
       title: "Sketch in Blue",
       artist: "Adeniyi Ojo"
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1465101178521-c1a9136a76c9?auto=format&fit=crop&w=400&q=80", // Botanical realistic handdrawn
+      image: "https://cdn.pixabay.com/photo/2018/10/02/09/05/hand-3719890_960_720.jpg",
       title: "Botanical Study",
       artist: "Camila Rojas"
-    },
+    }
   ];
 
   // Minimalist style for artwork grid (CSS-in-JS for local isolation)
