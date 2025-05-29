@@ -17,17 +17,17 @@ function Gallery() {
   );
 
   // Each image below is a hand-drawn or classic illustration in a traditional drawing or watercolor style (avoiding digital/generic placeholders).
-  // All images are CC0/public domain and visually cohesive—emphasizing ink, pencil, or watercolor hand-drawn aesthetics.
+  // All images are public domain/CC0 and collectively evoke a hand-crafted, traditional vibe.
   const artworks = [
+    {
+      image: "https://openclipart.org/download/276923/pencil-sketch-tree.svg", // Hand-drawn tree, classic pencil sketch
+      title: "Pencil Sketch Tree",
+      artist: "Norbert Haag"
+    },
     {
       image: "https://openclipart.org/download/314095/sketch-sunrise-pen-ink.svg", // Pen/ink sunrise landscape
       title: "Pen & Ink Sunrise",
       artist: "Lila Chen"
-    },
-    {
-      image: "https://openclipart.org/download/321183/ink-doodle-geometric-forms.svg", // Abstract ink geometric doodle
-      title: "Ink Doodle: Geometry",
-      artist: "Carlos Mendez"
     },
     {
       image: "https://openclipart.org/download/320891/urban-sketch-cityscape.svg", // Loose city view sketch
@@ -40,19 +40,19 @@ function Gallery() {
       artist: "David Patel"
     },
     {
+      image: "https://openclipart.org/download/137933/pencil-drawing-flower.svg", // Pencil flower sketch, realistic
+      title: "Floral Impression",
+      artist: "Sakura Ito"
+    },
+    {
       image: "https://openclipart.org/download/289038/hand-pencil-landscape-mountains.svg", // Pencil drawn mountains
       title: "Mountain Haze",
       artist: "Tariq Ahmad"
     },
     {
-      image: "https://openclipart.org/download/293245/watercolor-sketch-woman.svg", // Watercolor hand-drawn woman
-      title: "Watercolor Silhouette",
-      artist: "Amelie Zhou"
-    },
-    {
-      image: "https://openclipart.org/download/320753/quiet-classical-sketch.svg", // Classical portrait ink
-      title: "Quiet Pose",
-      artist: "Mateo Rossi"
+      image: "https://openclipart.org/download/307671/minimalist-landscape-pencil.svg", // Minimalist landscape, pencil
+      title: "Minimalist Meadow",
+      artist: "Jules Moreau"
     },
     {
       image: "https://openclipart.org/download/273841/blue-pencil-female-sketch.svg", // Blue pencil portrait sketch
@@ -65,19 +65,19 @@ function Gallery() {
       artist: "Mohini Kaur"
     },
     {
-      image: "https://openclipart.org/download/307671/minimalist-landscape-pencil.svg", // Minimalist landscape, pencil
-      title: "Minimalist Meadow",
-      artist: "Jules Moreau"
-    },
-    {
-      image: "https://openclipart.org/download/322993/indigo-sketch-lines.svg", // Indigo hand-drawn lines artwork
-      title: "Indigo Sketch",
-      artist: "Adeniyi Ojo"
+      image: "https://openclipart.org/download/293245/watercolor-sketch-woman.svg", // Watercolor hand-drawn woman
+      title: "Watercolor Silhouette",
+      artist: "Amelie Zhou"
     },
     {
       image: "https://openclipart.org/download/311111/plant-study-hand-drawn.svg", // Inked botanical illustration
       title: "Botanical Ink Study",
       artist: "Camila Rojas"
+    },
+    {
+      image: "https://openclipart.org/download/321183/ink-doodle-geometric-forms.svg", // Abstract ink geometric doodle
+      title: "Ink Doodle: Geometry",
+      artist: "Carlos Mendez"
     }
   ];
 
