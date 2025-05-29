@@ -200,7 +200,7 @@ function Gallery() {
       {/* Intro Block */}
       <section style={galleryStyles.intro} aria-label="Student Artworks Introduction">
         <div className="subtitle">Art Gallery</div>
-        <h1 className="title gradient-headline" style={{ marginTop: 2 }}>Student Artworks</h1>
+        <h1 className="gradient-headline" style={{ marginTop: 2, fontSize: "2.48rem", fontWeight: 600, lineHeight: 1.14 }}>Student Artworks</h1>
         <div className="description" style={galleryStyles.introText}>
           Discover the creative journey of our students through strictly hand-drawn sketches and studies. Every piece in this gallery is crafted in pencil, pen, or ink—celebrating traditional techniques and the tactile quality of art on paper. Enjoy the unity of style: minimalism lets every nuanced mark and organic imperfection shine.
         </div>
