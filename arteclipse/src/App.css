@@ -221,13 +221,13 @@ body {
 }
 
 .subtitle {
-  color: var(--kavia-orange);
+  color: var(--kavia-purple);
   font-weight: 300; /* lighter, thin */
   font-size: var(--font-sz-sub);
   letter-spacing: 0.026em;
   margin-bottom: 0.26em;
   margin-top: 0;
-  text-shadow: 0 1px 16px #30184e33;
+  text-shadow: 0 1px 16px #a259ff44;
   font-family: var(--font-main);
 }
 
