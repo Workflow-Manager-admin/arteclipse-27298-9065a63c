@@ -3,7 +3,10 @@ import FloatingActionButton from "../components/FloatingActionButton";
 import "../components/FloatingActionButton.css";
 
 // PUBLIC_INTERFACE
-/** Gallery view with FAB for creating new artwork */
+/**
+ * Gallery view for student artworks.
+ * Introduction text plus a responsive grid of artwork cards using the minimalist thin font.
+ */
 function Gallery() {
   // Minimalist plus icon in SVG (add/create)
   const plusIcon = (
@@ -13,13 +16,215 @@ function Gallery() {
     </svg>
   );
 
+  // Sample artwork data ("assets" could be used - for now, all placeholders)
+  const artworks = [
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=1", // placeholder
+      title: "Sunrise in Monochrome",
+      artist: "Lila Chen"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=2",
+      title: "Shapes & Shadows",
+      artist: "Carlos Mendez"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=3",
+      title: "City Dreams",
+      artist: "Ava Nguyen"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=4",
+      title: "Night Sketch",
+      artist: "David Patel"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=5",
+      title: "Mountain Echo",
+      artist: "Tariq Ahmad"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=6",
+      title: "Digital Whispers",
+      artist: "Amelie Zhou"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=7",
+      title: "Portrait of Silence",
+      artist: "Mateo Rossi"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=8",
+      title: "Blue Sketch #21",
+      artist: "Sonia Pavlov"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=9",
+      title: "Childhood Memory",
+      artist: "Mohini Kaur"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=10",
+      title: "Minimal Serenity",
+      artist: "Jules Moreau"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=11",
+      title: "Sketch in Blue",
+      artist: "Adeniyi Ojo"
+    },
+    {
+      image: "https://source.unsplash.com/collection/190727/400x300?sig=12",
+      title: "Botanical Study",
+      artist: "Camila Rojas"
+    },
+  ];
+
+  // Minimalist style for artwork grid (CSS-in-JS for local isolation)
+  const galleryStyles = {
+    root: {
+      width: "100vw",
+      minHeight: "100%",
+      padding: 0,
+      margin: 0,
+      position: "relative",
+      overflowX: "hidden",
+      background: "none",
+      fontFamily: "var(--font-main)",
+    },
+    intro: {
+      width: "100vw",
+      maxWidth: "100vw",
+      margin: "0 0 8px 0",
+      paddingTop: 120,
+      paddingBottom: 40,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      justifyContent: "flex-start",
+      background: "none",
+      boxShadow: "none",
+      zIndex: 1,
+    },
+    introText: {
+      marginLeft: 52,
+      marginRight: 0,
+      textAlign: "left",
+      width: "100%",
+      maxWidth: 600,
+      color: "var(--text-secondary,rgba(255,255,255,0.76))",
+      marginTop: 11,
+      fontWeight: 200,
+      fontSize: "1.17rem",
+      letterSpacing: "0.016em",
+      lineHeight: 1.54,
+      fontFamily: "var(--font-main)"
+    },
+    gridSection: {
+      width: "100%",
+      margin: "0 auto",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      background: "none",
+      boxShadow: "none"
+    },
+    grid: {
+      width: "100%",
+      maxWidth: 1080,
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+      gap: "32px",
+      padding: "16px 2vw 48px 2vw",
+      background: "none",
+      boxShadow: "none"
+    },
+    card: {
+      background: "rgba(255,255,255,0.021)",
+      border: "1px solid var(--border-color,rgba(255,255,255,0.11))",
+      borderRadius: 16,
+      minHeight: 319,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      boxShadow: "0 2.5px 15px 0 #22113c0c",
+      fontFamily: "var(--font-main)",
+      fontWeight: 200,
+      letterSpacing: "0.012em",
+      gap: "7px",
+      padding: "18px 15px 14px 15px",
+      transition: "box-shadow 0.18s, border-color 0.15s",
+      color: "var(--text-color,#fff)",
+      textAlign: "center"
+    },
+    img: {
+      width: "100%",
+      maxWidth: 240,
+      minHeight: 164,
+      aspectRatio: "5/3",
+      borderRadius: 9,
+      objectFit: "cover",
+      marginBottom: 12,
+      border: "1px solid rgba(255,255,255,0.07)",
+      background: "rgba(255,255,255,0.016)",
+      boxShadow: "0 1.5px 11px 0 #3a059015"
+    },
+    title: {
+      fontFamily: "var(--font-main)",
+      fontWeight: 200,
+      fontSize: "1.12rem",
+      color: "var(--text-color,#fff)",
+      lineHeight: 1.19,
+      letterSpacing: "0.014em",
+      margin: "3px 0 0 0"
+    },
+    artist: {
+      fontFamily: "var(--font-main)",
+      fontWeight: 200,
+      fontSize: "0.97rem",
+      color: "var(--text-secondary,rgba(255,255,255,0.72))",
+      margin: "1px 0 0 0"
+    }
+  };
+
+  // Responsive tweak (for smaller screens) - could be migrated to CSS
+  if (window.innerWidth < 700) {
+    galleryStyles.intro.marginLeft = 12;
+    galleryStyles.introText.marginLeft = 12;
+    galleryStyles.grid.padding = "10px 1vw 28px 1vw";
+    galleryStyles.grid.gap = "15px";
+  }
+
   return (
-    <div className="hero">
-      <div className="subtitle">Art Gallery</div>
-      <h1 className="title">Gallery - Coming Soon</h1>
-      <div className="description">
-        Browse and share artworks. The gallery will be available soon.
-      </div>
+    <div style={galleryStyles.root}>
+      {/* Intro Block */}
+      <section style={galleryStyles.intro} aria-label="Student Artworks Introduction">
+        <div className="subtitle">Art Gallery</div>
+        <h1 className="title" style={{ marginTop: 2 }}>Student Artworks</h1>
+        <div className="description" style={galleryStyles.introText}>
+          Discover the creative journey of our students—from first sketches to digital masterpieces. This gallery features hand-drawn and digital artworks, sharing unique perspectives and techniques from artists at every skill level. Enjoy the minimalist presentation: each piece is placed at the center, to let art and imagination shine.
+        </div>
+      </section>
+
+      {/* Artwork Grid */}
+      <section style={galleryStyles.gridSection} aria-label="Artwork Gallery Grid">
+        <div style={galleryStyles.grid}>
+          {artworks.map((art, idx) => (
+            <div key={idx} style={galleryStyles.card} aria-label={`Artwork ${art.title}`}>
+              <img
+                src={art.image}
+                alt={art.title}
+                style={galleryStyles.img}
+                loading="lazy"
+              />
+              <div style={galleryStyles.title}>{art.title}</div>
+              <div style={galleryStyles.artist}>{art.artist}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Add Artwork Button */}
       <FloatingActionButton
         icon={plusIcon}
         label="New Artwork"
