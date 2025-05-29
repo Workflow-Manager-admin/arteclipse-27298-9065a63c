@@ -1,11 +1,11 @@
 :root {
-  /* Color palette: minimalist, deep black with subtle rainbow overlay for ArtEclipse */
+  /* Color palette: minimalist, deep black with subtle purple overlay for ArtEclipse */
   --primary-bg: #000000;
-  --ombre-end: #4b006e; /* Retain for accents and legacy backgrounds */
+  --ombre-end: #4b006e;
   --kavia-purple: #a259ff;
   --kavia-dark: #161623;
   /* Subtly updated accent for navigation bar/backgrounds, remains visually harmonic with new effect */
-  --kavia-accent: linear-gradient(90deg, #000000 0%, #4b006e 100%);
+  --kavia-accent: linear-gradient(90deg, #000000 0%, #a259ff 100%);
   --text-color: #ffffff;
   --text-secondary: rgba(255,255,255,0.66);
   --border-color: rgba(255,255,255,0.11);
@@ -22,7 +22,6 @@ body {
   margin: 0;
   font-family: var(--font-main);
   color: var(--text-color);
-  /* Minimalist deep black base with a subtle rainbow gradient overlay (radial & linear mix for softness) */
   background:
     radial-gradient(ellipse 120% 90% at 50% 10%, 
       rgba(255,0,120,.08) 0%, 
@@ -35,13 +34,12 @@ body {
       rgba(248, 54, 0, 0.13) 6%,
       rgba(248, 194, 0, 0.11) 15%,
       rgba(0,255,180,0.11) 35%,
-      rgba(85,41,255,0.12) 54%,
+      rgba(162,89,255,0.12) 54%,
       rgba(255,0,160,0.12) 73%,
       rgba(0,0,0,0.14) 100%
     ),
     #000000;
   min-height: 100vh;
-  /* Remove scroll glow / borders / extra shadows */
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,11 +55,6 @@ body {
 }
 
 /* NAVIGATION BAR */
-/* 
-  Ensures navbar and all its link/text elements are forced to black using !important.
-  This solves issues where color is not actually applied due to specificity or inline style conflicts.
-  Related elements: .navbar, .logo, .logo-symbol, .nav-links, .nav-link
-*/
 .navbar {
   background: #fff !important;
   padding: 13px 0 12px 0;
@@ -80,10 +73,9 @@ body {
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.007em;
-  color: #000 !important; /* Force black in navbar */
+  color: #000 !important;
 }
 
-/* Extra specificity for App.js's navbar flexbox layout */
 .navbar-inner {
   display: flex;
   justify-content: space-between;
@@ -91,7 +83,6 @@ body {
   width: 100%;
 }
 
-/* NAVIGATION LINK COLORS: only these selectors enforce black, not .logo or .logo-symbol */
 .navbar,
 .navbar .nav-links,
 .navbar .nav-links .nav-link,
@@ -103,9 +94,7 @@ body {
   color: #222 !important;
 }
 
-/* .logo-symbol and .logo-text get the rainbow gradient -- only these elements! */
 .logo-symbol {
-  /* Pink–purple–blue ombre gradient fill (no more rainbow) */
   background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
@@ -115,7 +104,6 @@ body {
   font-weight: 300;
 }
 .logo-text {
-  /* Pink–purple–blue ombre gradient fill for "ArtEclipse" */
   background: linear-gradient(to right, #ff5fa2, #8f5eff, #2ec4fd);
   color: transparent !important;
   -webkit-background-clip: text !important;
@@ -123,7 +111,6 @@ body {
   background-clip: text !important;
 }
 
-/* LOGO CONTAINER: uses flex, no color or background! Only .logo-symbol and .logo-text inside show effect. */
 .logo {
   font-size: 1.46rem;
   font-weight: 300;
@@ -142,7 +129,6 @@ body {
   z-index: 1;
 }
 
-/* Defensive: nav links always black even if descendant - maximum specificity */
 .navbar .nav-links,
 .nav-links {
   display: flex;
@@ -161,7 +147,6 @@ body {
   font-weight: 200;
 }
 
-/* all nav-link: nearly-black, thin */
 .nav-link {
   font-size: var(--font-sz-base);
   background: none !important;
@@ -220,9 +205,10 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Purple accent */
 .subtitle {
   color: var(--kavia-purple);
-  font-weight: 300; /* lighter, thin */
+  font-weight: 300;
   font-size: var(--font-sz-sub);
   letter-spacing: 0.026em;
   margin-bottom: 0.26em;
@@ -234,7 +220,7 @@ body {
 .title {
   font-size: var(--font-sz-title);
   font-family: var(--font-main);
-  font-weight: 200;   /* thin, minimalist */
+  font-weight: 200;
   line-height: 1.17;
   letter-spacing: -0.011em;
   margin: 0;
@@ -252,11 +238,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-main);
-  font-weight: 200;  /* thin, minimalist */
+  font-weight: 200;
   letter-spacing: 0.016em;
 }
 
-/* Section and main content text styling for minimalist effect */
 .container,
 main,
 section,
@@ -272,7 +257,6 @@ section,
   box-shadow: none;
 }
 
-/* Apply minimalist font for placeholders (inputs, textareas) */
 input::placeholder,
 textarea::placeholder {
   font-family: var(--font-main);
@@ -281,7 +265,7 @@ textarea::placeholder {
   opacity: 1;
 }
 
-/* BUTTONS */
+/* BUTTONS - Purple theme */
 .btn {
   background: var(--kavia-purple);
   color: white;
@@ -365,7 +349,7 @@ a:hover, a:focus {
   width: 100vw;
   max-width: 100vw;
   margin: 0 0 8px 0;
-  padding-top: 120px; /* enough to clear fixed navbar + some vertical space */
+  padding-top: 120px;
   padding-bottom: 28px;
   display: flex;
   flex-direction: column;
@@ -398,8 +382,6 @@ a:hover, a:focus {
   margin-top: 2px;
   margin-bottom: 0;
 }
-
-/* Responsive: Center intro text and reduce side margin for mobile */
 @media (max-width: 800px) {
   .lessons-intro .subtitle,
   .lessons-intro .title,
@@ -442,10 +424,10 @@ a:hover, a:focus {
   padding-bottom: 8px;
   display: flex;
   flex-direction: column;
-  gap: 27px; /* slight extra vertical gap between horizontal strips */
+  gap: 27px;
 }
 
-/* Each horizontal strip (row) containing up to 4 cards, extending further to the right */
+/* Each horizontal strip (row) containing up to 4 cards */
 .lessons-strip-row {
   display: flex;
   flex-direction: row;
@@ -456,13 +438,12 @@ a:hover, a:focus {
   max-width: 1360px;
   min-width: 840px;
   margin-left: auto;
-  margin-right: max(-9vw, -80px); /* Visually extend strip to right edge */
+  margin-right: max(-9vw, -80px);
   padding-right: 3vw;
   box-sizing: border-box;
   transition: margin 0.2s, width 0.2s;
 }
 
-/* Responsive: for narrower screens, stack cards in strips of 2 or 1 */
 @media (max-width: 1350px) {
   .lessons-strip-row {
     width: 98vw;
@@ -473,7 +454,6 @@ a:hover, a:focus {
     padding-right: 6vw;
   }
 }
-
 @media (max-width: 1100px) {
   .lessons-strip-row {
     gap: 14px;
@@ -519,9 +499,6 @@ a:hover, a:focus {
   }
 }
 
-/* Remove all previous horizontal scroll/row styles for lessons section */
-
-/* Individual lesson card */
 .lesson-card {
   background: rgba(255,255,255,0.021);
   border: 1px solid var(--border-color,rgba(255,255,255,0.11));
@@ -529,17 +506,19 @@ a:hover, a:focus {
   box-shadow: 0 2.5px 15px 0 #22113c0d;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-width: 252px;
   max-width: 300px;
   min-height: 258px;
-  padding: 24px 22px 18px 22px;
+  padding: 25px 24px 22px 24px;
   transition: box-shadow 0.18s, border-color 0.15s;
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.015em;
   color: var(--text-color);
   margin-right: 0;
+  gap: 2px;
+  justify-content: flex-start;
 }
 .lesson-card:hover {
   border-color: var(--kavia-purple, #a259ff);
@@ -548,8 +527,6 @@ a:hover, a:focus {
 }
 
 /* The rest of the file's lesson card/snippet/typography media queries remain unchanged */
-
-/* Responsive: for narrower screens, stack cards in strips of 2 or 1 */
 @media (max-width: 1100px) {
   .lessons-strip-row {
     gap: 14px;
@@ -581,9 +558,7 @@ a:hover, a:focus {
   }
 }
 
-/* Remove all previous horizontal scroll/row styles for lessons section */
-
-/* Individual lesson card */
+/* Individual lesson card - alternate card sizes for responsive */
 .lesson-card {
   background: rgba(255,255,255,0.021);
   border: 1px solid var(--border-color,rgba(255,255,255,0.11));
@@ -592,15 +567,16 @@ a:hover, a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 220px;
-  max-width: 240px;
+  min-width: 252px;
+  max-width: 300px;
   min-height: 258px;
-  padding: 22px 18px 16px 18px;
+  padding: 24px 22px 18px 22px;
   transition: box-shadow 0.18s, border-color 0.15s;
   font-family: var(--font-main);
   font-weight: 200;
   letter-spacing: 0.015em;
   color: var(--text-color);
+  margin-right: 0;
 }
 .lesson-card:hover {
   border-color: var(--kavia-purple, #a259ff);
@@ -620,7 +596,6 @@ a:hover, a:focus {
   justify-content: center;
 }
 
-/* Card Typography - minimalist, thin font usage */
 .lesson-card-title {
   font-family: var(--font-main);
   font-size: 1.13rem;
@@ -667,34 +642,6 @@ a:hover, a:focus {
   background: none;
 }
 
-.lesson-card {
-  background: rgba(255,255,255,0.021);
-  border: 1px solid var(--border-color,rgba(255,255,255,0.11));
-  border-radius: 14px;
-  box-shadow: 0 2.5px 15px 0 #22113c0d;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 252px;
-  max-width: 300px;
-  min-height: 258px;
-  padding: 25px 24px 22px 24px;
-  transition: box-shadow 0.18s, border-color 0.15s;
-  font-family: var(--font-main);
-  font-weight: 200;
-  letter-spacing: 0.015em;
-  color: var(--text-color);
-  margin-right: 0;
-  gap: 2px;
-  justify-content: flex-start;
-}
-.lesson-card:hover {
-  border-color: var(--kavia-purple, #a259ff);
-  box-shadow: 0 6px 32px 0 #a259ff4a, 0 2px 11px 0 #13012916;
-  cursor: pointer;
-}
-
-/* Make card text left-aligned on most screens, center only on mobile if required by layout, whitespace for readability */
 @media (max-width: 650px) {
   .lesson-card-title,
   .lesson-card-level,
@@ -713,8 +660,6 @@ a:hover, a:focus {
     gap: 1px;
   }
 }
-
-/* Responsive: lesson cards shrink on narrower screens */
 @media (max-width: 900px) {
   .lesson-card {
     min-width: 155px;
