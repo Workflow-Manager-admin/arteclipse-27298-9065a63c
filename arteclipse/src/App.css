@@ -348,7 +348,7 @@ a:hover, a:focus {
   background: rgba(255,255,255,0.021);
 }
 .auth-form input:focus {
-  border-color: var(--kavia-orange,#E87A41);
+  border-color: var(--kavia-purple,#a259ff);
 }
 
 @media (max-width: 500px) {
@@ -639,7 +639,7 @@ a:hover, a:focus {
 }
 
 .lesson-card-level {
-  color: var(--kavia-orange);
+  color: var(--kavia-purple);
   font-family: var(--font-main);
   font-size: 0.96rem;
   font-weight: 200;
