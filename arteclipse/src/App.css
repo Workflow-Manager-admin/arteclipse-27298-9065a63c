@@ -133,7 +133,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #222;
+  color: #222 !important;
   border-radius: 0;
   border-bottom: 2px solid transparent;
   transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
@@ -146,19 +146,17 @@ body {
   background: none;
 }
 
-/* Active/current nav-link: bolder, still #222, subtle underline */
 .nav-link.active,
 .nav-link[aria-current="page"] {
-  color: #222;
+  color: #222 !important;
   font-weight: 400;
   border-bottom: 2px solid #222;
   background: none;
 }
 
-/* Hover/focus: orange accent, minimalist underline; font-weight up */
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--kavia-orange);
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--kavia-orange) !important;
   border-bottom: 2px solid var(--kavia-orange);
   text-decoration: none;
   background: none;
