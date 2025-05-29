@@ -6,6 +6,12 @@ import {
 } from 'react-router-dom';
 import './App.css';
 
+// Import Inter (thin, light) font from Google Fonts for minimalist navbar & nav text
+const font = document.createElement("link");
+font.rel = "stylesheet";
+font.href = "https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap";
+document.head.appendChild(font);
+
 import Home from './views/Home';
 import Lessons from './views/Lessons';
 import Gallery from './views/Gallery';
