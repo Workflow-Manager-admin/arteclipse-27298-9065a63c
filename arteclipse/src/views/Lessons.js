@@ -95,7 +95,7 @@ function VideoThumbnail() {
     <div className="lesson-card-thumbnail" aria-label="Video thumbnail placeholder">
       <svg width="72" height="46" viewBox="0 0 72 46" fill="none" style={{ display: "block" }}>
         <rect x="1.5" y="1.5" width="69" height="43" rx="8" fill="rgba(255,255,255,0.018)" stroke="rgba(255,255,255,0.13)" strokeWidth="2"/>
-        <polygon points="30,16 48,23 30,30" fill="rgba(232,122,65,0.26)"/>
+        <polygon points="30,16 48,23 30,30" fill="rgba(162,89,255,0.26)"/>
       </svg>
     </div>
   );
