@@ -77,6 +77,7 @@ body {
   letter-spacing: 0.007em;
 }
 
+/* LOGO: logo text is minimalist black, symbol remains orange accent */
 .logo {
   font-size: 1.46rem;
   font-weight: 300;
@@ -90,18 +91,17 @@ body {
   background: none !important;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
-  /* minimal, just black text for logo (symbol handled separately) */
 }
 
+/* only logo symbol gets accent color */
 .logo-symbol {
   color: var(--kavia-orange);
   background: none;
   font-size: 1.42em;
   font-weight: 300;
-  /* retain Kavia orange accent for symbol only */
 }
 
-/* Minimalist navigation links on white, thin font, dark text, smooth hover */
+/* Minimalist navigation links on white, very dark text, smooth hover, thin font */
 .nav-links {
   display: flex;
   align-items: center;
@@ -111,14 +111,14 @@ body {
   font-weight: 200;
 }
 
-/* NAVIGATION LINKS: always nearly-black, minimalist thin font */
+/* all nav-link: nearly-black, thin */
 .nav-link {
   font-size: var(--font-sz-base);
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
-  color: #222; /* nearly-black for best legibility on white */
+  color: #222;
   border-radius: 0;
   border-bottom: 2px solid transparent;
   transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
@@ -131,7 +131,7 @@ body {
   background: none;
 }
 
-/* ACTIVE state: slightly bolder, but keep text #222 */
+/* Active/current nav-link: bolder, still #222, subtle underline */
 .nav-link.active,
 .nav-link[aria-current="page"] {
   color: #222;
@@ -140,8 +140,9 @@ body {
   background: none;
 }
 
-/* HOVER/FOCUS: subtle kavia orange, minimalist underline; text weight slightly up */
-.nav-link:hover, .nav-link:focus {
+/* Hover/focus: orange accent, minimalist underline; font-weight up */
+.nav-link:hover,
+.nav-link:focus {
   color: var(--kavia-orange);
   border-bottom: 2px solid var(--kavia-orange);
   text-decoration: none;
@@ -232,7 +233,6 @@ textarea::placeholder {
   color: var(--text-secondary);
   opacity: 1;
 }
-
 
 /* BUTTONS */
 .btn {
