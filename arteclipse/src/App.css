@@ -614,7 +614,7 @@ a:hover, a:focus {
 }
 
 .lesson-card-level {
-  color: var(--kavia-purple);
+  color: var(--kavia-blue);
   font-family: var(--font-main);
   font-size: 0.96rem;
   font-weight: 200;
