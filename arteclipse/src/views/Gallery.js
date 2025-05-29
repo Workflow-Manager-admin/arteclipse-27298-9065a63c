@@ -203,7 +203,7 @@ function Gallery() {
         <div className="subtitle">Art Gallery</div>
         <h1 className="title" style={{ marginTop: 2 }}>Student Artworks</h1>
         <div className="description" style={galleryStyles.introText}>
-          Discover the creative journey of our students—from first sketches to digital masterpieces. This gallery features hand-drawn and digital artworks, sharing unique perspectives and techniques from artists at every skill level. Enjoy the minimalist presentation: each piece is placed at the center, to let art and imagination shine.
+          Discover the creative journey of our students through strictly hand-drawn sketches and studies. Every piece in this gallery is crafted in pencil, pen, or ink—celebrating traditional techniques and the tactile quality of art on paper. Enjoy the unity of style: minimalism lets every nuanced mark and organic imperfection shine.
         </div>
       </section>
 
