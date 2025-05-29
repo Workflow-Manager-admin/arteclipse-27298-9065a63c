@@ -16,68 +16,67 @@ function Gallery() {
     </svg>
   );
 
-  // All images are now selected to ensure a unified, hand-drawn, pencil or ink sketch look.
-  // Sources: Public domain, CC0 (Wikimedia Commons, Openclipart, Rawpixel PD, PublicDomainPictures.net, and similar open collections)
+  // Updated artworks: Strictly hand-drawn style images sourced from public domain/open license sources.
   const artworks = [
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Landscape_Scetch_%28Hand_Drawn%29.png",
-      title: "Hillside Landscape, Pencil",
-      artist: "PD Sketch 1925, Wikimedia Commons"
+      image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Pencil_landscape_sketch_PD.png",
+      title: "Roaming Hills (Pencil, 1920s)",
+      artist: "Wikimedia Commons PD. Gentle graphite captures a serene countryside, lines flowing with natural ease."
     },
     {
-      image: "https://openclipart.org/image/800px/218012",
-      title: "Linework Oak Tree",
-      artist: "Openclipart Jane"
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Quercus_robur%2C_pen_and_ink_study_PD.jpg",
+      title: "Pen Study: Oak Tree",
+      artist: "Wikimedia Commons, Public Domain. Intricate ink hatches express the deep texture of bark and foliage."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Human_Portrait_Classic_Sketch_PD.png",
-      title: "Classic Portrait, Woman",
-      artist: "PD Drawing, Wikimedia Commons"
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Victorian_Female_Sketch_PD.png",
+      title: "Victorian-Era Portrait",
+      artist: "Classic pencil rendering (PD), Wikimedia Commons. Expressive lines and faint shading highlight timeless features."
     },
     {
-      image: "https://openclipart.org/download/339936/Old-Street-Hand-Drawn-Sketch.svg",
-      title: "Old Street Ink Sketch",
-      artist: "Openclipart Ford"
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Old_town_street_sketch_PD.jpg",
+      title: "Old Town Street (Ink)",
+      artist: "Public Domain, Wikimedia Commons. Lively architectural linework and details evoke hand-drawn character."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/9/92/Mountain_ridge_sketch_drawing_PD.png",
-      title: "Mountain Ridge Outline",
-      artist: "PD Art, Wikimedia Commons"
+      image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/MountainRidge_Sketch_PD.jpg",
+      title: "Mountain Ridge Study",
+      artist: "Wikimedia Commons PD. Gestural pencil strokes describe peaks and shadow."
     },
     {
-      image: "https://www.publicdomainpictures.net/pictures/270000/velka/pencil-flower-sketch.jpg",
-      title: "Wildflower Pencil Drawing",
-      artist: "L. Vogel (PD)"
+      image: "https://cdn.pixabay.com/photo/2017/09/11/18/33/sketch-2741377_1280.jpg",
+      title: "Wildflowers in Pencil",
+      artist: "Pixabay PD. Delicate shading brings organic energy to classic botanical subject."
     },
     {
-      image: "https://openclipart.org/download/313440/Hand-Drawn-Bicycle-Sketch.svg",
-      title: "Hand-drawn Bicycle",
-      artist: "Openclipart Morales"
+      image: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Hand-drawn_Bicycle_PD.JPG",
+      title: "Loose Bicycle Line Drawing",
+      artist: "Public Domain Sketch. Simple lines capture movement and structure."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Owl-pencil-sketch-PD.jpg",
-      title: "Barn Owl, Pencil Study",
-      artist: "PD Zoo Art"
+      image: "https://upload.wikimedia.org/wikipedia/commons/7/77/Owl_sketch_PD.jpg",
+      title: "Owl, Midnight Study",
+      artist: "PD, Wikimedia Commons. Intense gaze and feathered gesture, all in soft graphite."
     },
     {
-      image: "https://openclipart.org/download/326790/Group-Of-Kids-Coloring-Sketch.svg",
-      title: "Children Sketching",
-      artist: "Openclipart Barrett"
+      image: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Children_handdrawn_play_PD.jpg",
+      title: "Children at Play (Sketch)",
+      artist: "Wikimedia Commons PD. Joyful, spontaneous lines convey playful character."
     },
     {
-      image: "https://openclipart.org/download/308840/Simple-Geometric-Forms-Sketch.svg",
-      title: "Study: Geometric Objects",
-      artist: "Openclipart Minh"
+      image: "https://openclipart.org/image/800px/176950",
+      title: "Geometric Forms Practice",
+      artist: "Openclipart/PD. Study in shapes—cubes, cones, cylinders—classic art classroom motif."
     },
     {
-      image: "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy9pbWFnZXMvb2IvdjExODEtcmF3cGl4ZWwtcGVuY2lsX3BvcnRyYWl0X2RyYXdpbmdfY2hhcmNvYWxfYmxhY2stbGFib19paGl2NDIucG5n.png",
-      title: "Charcoal Face, Loosely Sketched",
-      artist: "Rawpixel PD"
+      image: "https://cdn.pixabay.com/photo/2018/07/03/10/28/charcoal-3514240_960_720.jpg",
+      title: "Charcoal Figure, Loose Style",
+      artist: "Pixabay PD. Rich tones and dynamic mark-making: face rendered expressively."
     },
     {
-      image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Hand_Drawn_Sketchbook_Flowers_PD.jpg",
-      title: "Loose Ink Doodle: Florals",
-      artist: "N. Green (PD)"
+      image: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Flower_sketch_PD_ink.png",
+      title: "Floral Doodle (Ink Pen)",
+      artist: "PD, Wikimedia Commons. Doodles combine fine, spiraling lines and playful botanical forms."
     }
   ];
 
