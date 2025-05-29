@@ -4,6 +4,7 @@ import "../components/FloatingActionButton.css";
 
 /**
  * Array of 16 minimalist lesson objects covering beginner to advanced drawing.
+ * (Content already reflects a progressive real-world journey.)
  */
 const lessons = [
   {
@@ -100,8 +101,9 @@ function VideoThumbnail() {
   );
 }
 
+// PUBLIC_INTERFACE
 /**
- * Lessons view: now displays a minimalist 4x4 grid of 16 lesson cards
+ * Lessons view: video lessons in vertical continuous flexbox strips (4 per row)
  */
 function Lessons() {
   // Minimalist Play/Start icon (triangle in circle)
@@ -112,25 +114,37 @@ function Lessons() {
     </svg>
   );
 
+  // Group lessons into strips of 4
+  function chunkArray(arr, size) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+      result.push(arr.slice(i, i + size));
+    }
+    return result;
+  }
+  const lessonStrips = chunkArray(lessons, 4);
+
   return (
     <div className="hero">
       <div className="subtitle">Interactive Lessons</div>
       <h1 className="title">Video Drawing Course: Beginner to Advanced</h1>
-      <div className="description" style={{maxWidth: 530}}>
+      <div className="description" style={{ maxWidth: 530 }}>
         16 immersive, minimalist video lessons—explore drawing from the simplest mark to advanced illustration mastery. Each card is a complete 10-hour journey.
       </div>
-      {/* Grid lessons section */}
-      <section className="lessons-grid-container" aria-label="Drawing Video Lessons">
-        <div className="lessons-card-grid">
-          {lessons.map((lesson, idx) => (
-            <div className="lesson-card" key={lesson.title}>
-              <VideoThumbnail />
-              <div className="lesson-card-title">{lesson.title}</div>
-              <div className="lesson-card-level">{lesson.level}</div>
-              <div className="lesson-card-desc">{lesson.desc}</div>
-            </div>
-          ))}
-        </div>
+      {/* Strips each containing 4 horizontally aligned lesson cards */}
+      <section className="lessons-strips-container" aria-label="Drawing Video Lessons">
+        {lessonStrips.map((strip, idx) => (
+          <div className="lessons-strip-row" key={`strip-${idx}`}>
+            {strip.map((lesson, j) => (
+              <div className="lesson-card" key={lesson.title}>
+                <VideoThumbnail />
+                <div className="lesson-card-title">{lesson.title}</div>
+                <div className="lesson-card-level">{lesson.level}</div>
+                <div className="lesson-card-desc">{lesson.desc}</div>
+              </div>
+            ))}
+          </div>
+        ))}
       </section>
       <FloatingActionButton
         icon={playIcon}
