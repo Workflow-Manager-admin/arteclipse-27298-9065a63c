@@ -283,7 +283,7 @@ textarea::placeholder {
 
 /* BUTTONS */
 .btn {
-  background: var(--kavia-orange);
+  background: var(--kavia-purple);
   color: white;
   border: none;
   border-radius: 4px;
@@ -292,10 +292,10 @@ textarea::placeholder {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s;
-  box-shadow: 0 2.5px 19px 0 #e87a4133;
+  box-shadow: 0 2.5px 19px 0 #a259ff44;
 }
 .btn:hover {
-  background: #FF8B4D;
+  background: #ad75ff;
 }
 .btn-large {
   padding: 14px 30px;
@@ -312,13 +312,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 a {
-  color: var(--kavia-orange);
+  color: var(--kavia-purple);
   text-decoration: none;
   transition: color 0.14s;
 }
 a:hover, a:focus {
-  color: #ffae6b;
-  text-decoration: underline solid var(--kavia-orange) 2px;
+  color: #c2a5ff;
+  text-decoration: underline solid var(--kavia-purple) 2px;
 }
 ::-webkit-scrollbar {
   width: 12px;
