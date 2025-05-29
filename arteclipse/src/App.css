@@ -154,24 +154,28 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 22px;
+  font-family: var(--font-main);
+  font-weight: 200;
+  letter-spacing: 0.01em;
 }
 
 .subtitle {
   color: var(--kavia-orange);
-  font-weight: 500;
+  font-weight: 300; /* lighter, thin */
   font-size: var(--font-sz-sub);
-  letter-spacing: 0.025em;
+  letter-spacing: 0.026em;
   margin-bottom: 0.26em;
   margin-top: 0;
   text-shadow: 0 1px 16px #30184e33;
+  font-family: var(--font-main);
 }
 
 .title {
   font-size: var(--font-sz-title);
   font-family: var(--font-main);
-  font-weight: 600;
+  font-weight: 200;   /* thin, minimalist */
   line-height: 1.17;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.011em;
   margin: 0;
   padding: 0;
   color: var(--text-color);
@@ -179,7 +183,7 @@ body {
 }
 
 .description {
-  font-size: 1.17rem;
+  font-size: 1.14rem;
   line-height: 1.54;
   color: var(--text-secondary);
   max-width: 600px;
@@ -187,7 +191,35 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-main);
+  font-weight: 200;  /* thin, minimalist */
+  letter-spacing: 0.016em;
 }
+
+/* Section and main content text styling for minimalist effect */
+.container,
+main,
+section,
+.hero,
+.subtitle,
+.title,
+.description {
+  font-family: var(--font-main);
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  background: none;
+  box-shadow: none;
+}
+
+/* Apply minimalist font for placeholders (inputs, textareas) */
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--font-main);
+  font-weight: 200;
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
 
 /* BUTTONS */
 .btn {
