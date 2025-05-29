@@ -98,6 +98,7 @@ body {
   background: none;
   font-size: 1.42em;
   font-weight: 300;
+  /* retain Kavia orange accent for symbol only */
 }
 
 /* Minimalist navigation links on white, thin font, dark text, smooth hover */
