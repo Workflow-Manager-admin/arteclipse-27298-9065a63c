@@ -176,13 +176,13 @@ body {
   margin-left: 24px;
   font-family: var(--font-main);
   font-weight: 200;
-  color: #222 !important;
+  color: #fff !important;
 }
 
 .navbar .nav-links .nav-link,
 .navbar .nav-link,
 .navbar .nav-link:visited {
-  color: #222 !important;
+  color: #fff !important;
   font-weight: 200;
 }
 
@@ -192,7 +192,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  color: #222 !important;
+  color: #fff !important;
   border-radius: 0;
   border-bottom: 2px solid transparent;
   transition: color 0.14s, border-bottom 0.18s, font-weight 0.13s;
@@ -206,9 +206,9 @@ body {
 
 .nav-link.active,
 .nav-link[aria-current="page"] {
-  color: #222 !important;
+  color: #fff !important;
   font-weight: 400;
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid #fff;
   background: none;
 }
 
