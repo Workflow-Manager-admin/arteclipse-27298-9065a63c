@@ -358,34 +358,33 @@ a:hover, a:focus {
   }
 }
 
-/* LESSONS: Horizontal scroll of minimalist video lecture cards */
-.lessons-scroll-container {
+/* LESSONS: Grid layout for minimalist video lecture cards */
+.lessons-grid-container {
   width: 100%;
   margin: 38px 0 0 0;
   padding-bottom: 8px;
-  overflow-x: auto;
-  overflow-y: visible;
-  /* Hide scrollbars on touch/modern browsers */
-  -ms-overflow-style: none;
-  scrollbar-width: thin;
-}
-.lessons-scroll-container::-webkit-scrollbar {
-  height: 7px;
-  background: transparent;
-}
-.lessons-scroll-container::-webkit-scrollbar-thumb {
-  background: #241C2A2a;
-  border-radius: 7px;
 }
 
-/* Horizontal card track */
-.lessons-card-row {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  min-width: 900px;
-  padding-bottom: 2px;
-  padding-left: 4px;
+.lessons-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 28px 24px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 7px 0 7px 0;
+}
+
+@media (max-width: 1100px) {
+  .lessons-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 23px 13px;
+  }
+}
+@media (max-width: 700px) {
+  .lessons-card-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 14px 0px;
+  }
 }
 
 /* Individual lesson card */

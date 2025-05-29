@@ -100,8 +100,9 @@ function VideoThumbnail() {
   );
 }
 
-// PUBLIC_INTERFACE
-/** Lessons view: horizontally scrollable 16 minimalist video lecture cards with clean UI */
+/**
+ * Lessons view: now displays a minimalist 4x4 grid of 16 lesson cards
+ */
 function Lessons() {
   // Minimalist Play/Start icon (triangle in circle)
   const playIcon = (
@@ -118,9 +119,9 @@ function Lessons() {
       <div className="description" style={{maxWidth: 530}}>
         16 immersive, minimalist video lessons—explore drawing from the simplest mark to advanced illustration mastery. Each card is a complete 10-hour journey.
       </div>
-      {/* Horizontally scrollable lessons section */}
-      <section className="lessons-scroll-container" aria-label="Drawing Video Lessons">
-        <div className="lessons-card-row">
+      {/* Grid lessons section */}
+      <section className="lessons-grid-container" aria-label="Drawing Video Lessons">
+        <div className="lessons-card-grid">
           {lessons.map((lesson, idx) => (
             <div className="lesson-card" key={lesson.title}>
               <VideoThumbnail />
